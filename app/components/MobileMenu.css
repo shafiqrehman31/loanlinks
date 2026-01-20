@@ -1,0 +1,206 @@
+/* app/components/MobileMenu.css */
+
+/* Hamburger Button */
+.hamburger-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+/* Backdrop Overlay */
+.menu-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Slide-in Menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 85%;
+  max-width: 320px;
+  height: 100%;
+  background: white;
+  box-shadow: -3px 0 20px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+/* Menu Header */
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 20px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.menu-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+/* Navigation */
+.menu-nav {
+  flex: 1;
+  padding: 24px 0;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.nav-link {
+  display: block;
+  padding: 16px 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  background: white;
+}
+
+.nav-link:hover {
+  background: #f8f9fa;
+  color: #0070f3;
+  padding-left: 24px;
+}
+
+/* Contact Section */
+.menu-contact {
+  padding: 24px 20px;
+  background: #f8f9fa;
+  border-top: 1px solid #eee;
+}
+
+.contact-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #555;
+  font-size: 0.95rem;
+  padding: 8px 0;
+  transition: color 0.2s;
+}
+
+.contact-link:hover {
+  color: #0070f3;
+}
+
+.contact-link svg {
+  flex-shrink: 0;
+  color: #666;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  .mobile-menu {
+    width: 90%;
+  }
+  
+  .nav-link {
+    padding: 14px 20px;
+    font-size: 1rem;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .mobile-menu {
+    background: #1a1a1a;
+    color: #fff;
+  }
+  
+  .menu-title,
+  .nav-link,
+  .contact-title {
+    color: #fff;
+  }
+  
+  .nav-link:hover {
+    background: #2a2a2a;
+    color: #3b82f6;
+  }
+  
+  .menu-contact {
+    background: #2a2a2a;
+  }
+  
+  .contact-link {
+    color: #ccc;
+  }
+  
+  .hamburger-btn,
+  .close-btn {
+    color: #fff;
+  }
+}
