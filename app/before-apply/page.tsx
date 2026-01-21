@@ -22,10 +22,7 @@ export default function BeforeApplyPage() {
 
   return (
     <div className="before-apply-page">
-      <PageHeader 
-        title="Important Information Before You Apply"
-       
-      />
+      <PageHeader title="Important Information Before You Apply" />
       
       <div className="page-content">
         {/* Hero Section */}
@@ -36,6 +33,9 @@ export default function BeforeApplyPage() {
                 <h1 className="hero-title">
                   Before You Apply for a Loan
                 </h1>
+                <p className="hero-subtitle">
+                  What you need to know before taking out a loan
+                </p>
                 <p className="hero-description">
                   Taking out a loan is a serious financial decision. Make sure you understand 
                   how it works and what could happen if you don't follow the loan terms.
@@ -129,7 +129,7 @@ export default function BeforeApplyPage() {
                         </svg>
                       </div>
                       <div className="warning-content">
-                        <strong>Important:</strong> Speedy Loan Link is not a lender and does not control loan fees, penalties, or repayment rules.
+                        <strong>Important:</strong> Speed Loan Center is not a lender and does not control loan fees, penalties, or repayment rules.
                       </div>
                     </div>
 
@@ -206,7 +206,7 @@ export default function BeforeApplyPage() {
                           <span>📊</span>
                         </div>
                         <div className="type-content">
-                          <h4>Hard Credit Check</h4>
+                          <h4>Hard Credit Inquiry</h4>
                           <p>If you proceed with a loan, the lender may perform this. Can affect your credit score.</p>
                         </div>
                       </div>
@@ -268,7 +268,7 @@ export default function BeforeApplyPage() {
                       <div className="disclaimer-content">
                         <h4>Our Role in Debt Collection</h4>
                         <p>
-                          Speedy Loan Link does not collect payments and does not handle debt collection.
+                          Speed Loan Center does not collect payments and does not handle debt collection.
                         </p>
                       </div>
                     </div>
@@ -319,7 +319,7 @@ export default function BeforeApplyPage() {
                     <div className="funding-notice">
                       <p>
                         If a lender approves your loan, the time it takes to receive funds can vary. 
-                        Speedy Loan Link does not control funding times.
+                        Speed Loan Center does not control funding times.
                       </p>
                     </div>
 
@@ -388,7 +388,7 @@ export default function BeforeApplyPage() {
                   <div className="card-body">
                     <div className="role-description">
                       <p>
-                        Speedy Loan Link helps connect you with lenders — we do not provide loans directly.
+                        Speed Loan Center helps connect you with lenders — we do not provide loans directly.
                       </p>
                     </div>
 
@@ -516,10 +516,18 @@ export default function BeforeApplyPage() {
           font-weight: 700;
           line-height: 1.2;
           color: #0c4a6e;
-          margin-bottom: 20px;
+          margin-bottom: 12px;
           background: linear-gradient(135deg, #0c4a6e 0%, #0369a1 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+          font-size: 20px;
+          font-weight: 500;
+          color: #475569;
+          margin-bottom: 20px;
+          line-height: 1.4;
         }
 
         .hero-description {
@@ -1045,6 +1053,10 @@ export default function BeforeApplyPage() {
 
           .hero-title {
             font-size: 32px;
+          }
+
+          .hero-subtitle {
+            font-size: 18px;
           }
 
           .hero-description {
