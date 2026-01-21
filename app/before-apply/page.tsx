@@ -24,7 +24,7 @@ export default function BeforeApplyPage() {
     <div className="before-apply-page">
       <PageHeader 
         title="Important Information Before You Apply"
-        subtitle="What you need to know before taking out a loan"
+       
       />
       
       <div className="page-content">
