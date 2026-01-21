@@ -54,7 +54,7 @@ export default function AboutSection() {
                     <div className="sec-title__shape__one"></div>
                     <div className="sec-title__shape__two"></div>
                   </div>
-                  <h6 className="sec-title__tagline">welcome to Speed Loan Center</h6>
+                  <h6 className="sec-title__tagline">welcome to Speedy Loan Center</h6>
                 </div>
                 <h3 className="sec-title__title">
                  Fast Loan Approval,  <br /> No Waiting

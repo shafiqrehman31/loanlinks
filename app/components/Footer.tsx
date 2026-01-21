@@ -14,7 +14,7 @@ export default function Footer() {
               <Link href="/">
                 <Image
                   src="/assets/images/logo-light.png"
-                  alt="Speed Loan Center"
+                  alt="speedy Loan Center"
                   width={180}
                   height={60}
                   className="mb-3"
@@ -84,7 +84,7 @@ export default function Footer() {
           {/* Contact */}
           <div className="col-md-3 mb-4">
             <h6 className="mb-3">Contact</h6>
-            <p className="mb-2">Email: info@speedloancenter.com</p>
+            <p className="mb-2">Email: info@speedyloancenter.com</p>
             <p className="mb-2">Phone: +91 5698 0036 420</p>
             
             <h6 className="mb-3 mt-4">Follow Us</h6>
@@ -106,7 +106,7 @@ export default function Footer() {
         </div>
         
         <div className="text-center pt-4 border-top border-secondary">
-          <p className="mb-0">© {currentYear} <strong>Speed Loan Center</strong>. All rights reserved.</p>
+          <p className="mb-0">© {currentYear} <strong>speedy Loan Center</strong>. All rights reserved.</p>
         </div>
       </div>
     </footer>

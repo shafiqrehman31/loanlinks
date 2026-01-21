@@ -12,12 +12,12 @@ type FAQItem = {
 const faqCategories = {
   general: [
     {
-      question: "What is Speed Loan Center?",
+      question: "What is speedyy Loan Center?",
       answer:
-        "Speed Loan Center is a leading online lending platform that provides fast, transparent, and accessible loan solutions."
+        "speedyy Loan Center is a leading online lending platform that provides fast, transparent, and accessible loan solutions."
     },
     {
-      question: "How is Speed Loan Center different from banks?",
+      question: "How is speedyy Loan Center different from banks?",
       answer:
         "We provide approvals within 24 hours with minimal documentation and flexible repayment options."
     }

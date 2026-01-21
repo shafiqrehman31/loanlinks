@@ -98,14 +98,14 @@ export default function CaliforniaPrivacyNoticePage() {
               </div>
               
               <div className="company-info">
-                <h2>Speed Loan Center</h2>
+                <h2>speedyy Loan Center</h2>
                 <p className="website">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                     <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" stroke="currentColor" strokeWidth="2"/>
                     <path d="M2 12H22" stroke="currentColor" strokeWidth="2"/>
                     <path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z" stroke="currentColor" strokeWidth="2"/>
                   </svg>
-                  www.speedloancenter.com
+                  www.speedyyloancenter.com
                 </p>
                 <p className="description">
                   This notice supplements our Privacy Policy and applies specifically to California residents 
@@ -137,7 +137,7 @@ export default function CaliforniaPrivacyNoticePage() {
                 <div className="card-content">
                   <h3>Our Role</h3>
                   <p>
-                    Speed Loan Center operates a financial lead-generation and distribution platform that 
+                    speedy Loan Center operates a financial lead-generation and distribution platform that 
                     connects consumers seeking loan products with third-party lenders and financial service 
                     providers through real-time routing and ping-tree technology.
                   </p>
@@ -151,7 +151,7 @@ export default function CaliforniaPrivacyNoticePage() {
                     <div>
                       <h4>Important Disclosure</h4>
                       <p>
-                        <strong>Speed Loan Center is not a lender, does not make credit decisions, 
+                        <strong>speedy Loan Center is not a lender, does not make credit decisions, 
                         and does not issue loans.</strong> We operate as a lead generator connecting 
                         consumers with potential lenders.
                       </p>
@@ -357,7 +357,7 @@ export default function CaliforniaPrivacyNoticePage() {
                         <span className="sale-tag">May Involve Sale</span>
                       </div>
                       <p>
-                        Speed Loan Center may sell or share personal information to third-party lenders 
+                        speedy Loan Center may sell or share personal information to third-party lenders 
                         and financial buyers in exchange for monetary or other valuable consideration.
                       </p>
                       
@@ -447,7 +447,7 @@ export default function CaliforniaPrivacyNoticePage() {
                         <p>You may opt out of the sale or sharing of your personal information at any time.</p>
                         <div className="opt-out-details">
                           <div className="opt-out-method">
-                            <strong>Email:</strong> contact@speedloancenter.com
+                            <strong>Email:</strong> contact@speedyloancenter.com
                           </div>
                           <div className="opt-out-link">
                             <a href="#" className="opt-out-btn">
@@ -489,7 +489,7 @@ export default function CaliforniaPrivacyNoticePage() {
                     </p>
                     <div className="contact-info">
                       <div className="contact-method">
-                        <strong>Email:</strong> contact@speedloancenter.com
+                        <strong>Email:</strong> contact@speedyloancenter.com
                       </div>
                     </div>
                     <p className="note">
@@ -528,7 +528,7 @@ export default function CaliforniaPrivacyNoticePage() {
                   <div className="compact-content">
                     <h4>Minors</h4>
                     <p>
-                      Speed Loan Center does not knowingly sell or share the personal information 
+                      speedy Loan Center does not knowingly sell or share the personal information 
                       of individuals under 16 years of age.
                     </p>
                   </div>
@@ -552,14 +552,14 @@ export default function CaliforniaPrivacyNoticePage() {
                   <div className="compact-content">
                     <h4>Contact Information</h4>
                     <div className="contact-details">
-                      <div className="company-name">Speed Loan Center</div>
+                      <div className="company-name">speedy Loan Center</div>
                       <div className="contact-item">
                         <span className="contact-label">Website:</span>
-                        <span className="contact-value">www.speedloancenter.com</span>
+                        <span className="contact-value">www.speedyloancenter.com</span>
                       </div>
                       <div className="contact-item">
                         <span className="contact-label">Email:</span>
-                        <span className="contact-value">contact@speedloancenter.com</span>
+                        <span className="contact-value">contact@speedyloancenter.com</span>
                       </div>
                     </div>
                   </div>
@@ -583,7 +583,7 @@ export default function CaliforniaPrivacyNoticePage() {
                   </p>
                 </div>
                 <div className="action-buttons">
-                  <a href="mailto:contact@speedloancenter.com" className="action-btn">
+                  <a href="mailto:contact@speedyloancenter.com" className="action-btn">
                     Email Request
                   </a>
                   <a href="/privacy" className="action-btn outline">

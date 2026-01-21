@@ -129,7 +129,7 @@ export default function BeforeApplyPage() {
                         </svg>
                       </div>
                       <div className="warning-content">
-                        <strong>Important:</strong> Speed Loan Center is not a lender and does not control loan fees, penalties, or repayment rules.
+                        <strong>Important:</strong> speedyy Loan Center is not a lender and does not control loan fees, penalties, or repayment rules.
                       </div>
                     </div>
 
@@ -268,7 +268,7 @@ export default function BeforeApplyPage() {
                       <div className="disclaimer-content">
                         <h4>Our Role in Debt Collection</h4>
                         <p>
-                          Speed Loan Center does not collect payments and does not handle debt collection.
+                          speedyy Loan Center does not collect payments and does not handle debt collection.
                         </p>
                       </div>
                     </div>
@@ -319,7 +319,7 @@ export default function BeforeApplyPage() {
                     <div className="funding-notice">
                       <p>
                         If a lender approves your loan, the time it takes to receive funds can vary. 
-                        Speed Loan Center does not control funding times.
+                        speedy Loan Center does not control funding times.
                       </p>
                     </div>
 
@@ -336,7 +336,7 @@ export default function BeforeApplyPage() {
                           <div className="factor-icon">
                             <span>💳</span>
                           </div>
-                          <span>Your bank's processing speed</span>
+                          <span>Your bank's processing speedy</span>
                         </div>
                         <div className="factor-item">
                           <div className="factor-icon">
@@ -388,7 +388,7 @@ export default function BeforeApplyPage() {
                   <div className="card-body">
                     <div className="role-description">
                       <p>
-                        Speed Loan Center helps connect you with lenders — we do not provide loans directly.
+                        speedy Loan Center helps connect you with lenders — we do not provide loans directly.
                       </p>
                     </div>
 

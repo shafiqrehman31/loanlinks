@@ -83,25 +83,25 @@ export default function HeroSection() {
 const slides = [
   {
     bg: '/assets/images/backgrounds/main-slider-bg-3-1.png',
-    subtitle: 'Speed Loans Center for Bright Futures',
+    subtitle: 'speedy Loans Center for Bright Futures',
     title1: 'Fast, Fair Personal ',
     title2: 'Loans in Minutes',
   },
   {
     bg: '/assets/images/backgrounds/main-slider-bg-3-2.png',
-    subtitle: 'Speed Loans Center for Bright Futures',
+    subtitle: 'speedy Loans Center for Bright Futures',
     title1: 'Smart Loan Solutions',
     title2: 'Built for Your Future',
   },
   {
     bg: '/assets/images/backgrounds/main-slider-bg-3-3.png',
-    subtitle: 'Speed Loans Center for Bright Futures',
+    subtitle: 'speedy Loans Center for Bright Futures',
     title1: 'We provide best',
     title2: 'services for your loan',
   },
   {
     bg: '/assets/images/backgrounds/main-slider-bg-3-4.png',
-    subtitle: 'Speed Loans Center for Bright Futures',
+    subtitle: 'speedy Loans Center for Bright Futures',
     title1: 'Simple, Secure &',
     title2: 'Stress-Free Borrowing',
   },

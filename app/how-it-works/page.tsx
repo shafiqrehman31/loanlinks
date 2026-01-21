@@ -100,7 +100,7 @@ export default function HowItWorks() {
                   How It Works - Get Your Loan in <span className="text-primary">4 Easy Steps</span>
                 </h1>
                 <p className="process-hero__text">
-                  At Speed Loan Center, we've simplified the loan process to make it fast, transparent, 
+                  At speedy Loan Center, we've simplified the loan process to make it fast, transparent, 
                   and hassle-free. Follow these simple steps to get the funds you need.
                 </p>
               </div>
@@ -326,7 +326,7 @@ export default function HowItWorks() {
               <div className="comparison-card speed-loan-card">
                 <div className="comparison-card__header">
                   <div className="comparison-card__icon">⚡</div>
-                  <h4 className="comparison-card__title">Speed Loan Center</h4>
+                  <h4 className="comparison-card__title">speedy Loan Center</h4>
                 </div>
                 <ul className="comparison-card__list">
                   <li className="comparison-card__item positive">✓ Application: 5 minutes online</li>
@@ -365,7 +365,7 @@ export default function HowItWorks() {
               <div className="process-cta__content">
                 <h2 className="process-cta__title">Ready to Get Started?</h2>
                 <p className="process-cta__text">
-                  Join thousands of satisfied customers who have found financial freedom with Speed Loan Center.
+                  Join thousands of satisfied customers who have found financial freedom with speedy Loan Center.
                 </p>
                 <div className="process-cta__buttons">
                   <Link href="/apply-loan" className="easilon-btn easilon-btn--light">

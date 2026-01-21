@@ -84,7 +84,7 @@ export default function MobileMenu() {
           <h3 className="contact-title">Contact Us</h3>
           <div className="contact-details">
             <a
-              href="mailto:needhelp@easilon.com"
+              href="mailto:needhelp@speedloancenter.com"
               className="contact-link"
               onClick={() => setIsOpen(false)}
             >

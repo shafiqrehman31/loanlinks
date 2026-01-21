@@ -111,17 +111,17 @@ export default function PrivacyPolicyPage() {
               </div>
               
               <div className="company-info">
-                <h2>Speed Loan Center</h2>
+                <h2>speedy Loan Center</h2>
                 <p className="website">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                     <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" stroke="currentColor" strokeWidth="2"/>
                     <path d="M2 12H22" stroke="currentColor" strokeWidth="2"/>
                     <path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z" stroke="currentColor" strokeWidth="2"/>
                   </svg>
-                  www.speedloancenter.com
+                  www.speedyloancenter.com
                 </p>
                 <p className="description">
-                  Speed Loan Center operates a financial lead-generation platform that connects consumers 
+                  speedy Loan Center operates a financial lead-generation platform that connects consumers 
                   with third-party lenders and financial service providers.
                 </p>
               </div>
@@ -530,7 +530,7 @@ export default function PrivacyPolicyPage() {
                       </ul>
                       <div className="opt-out-info">
                         <h6>Opt-Out:</h6>
-                        <p>Email: contact@speedloancenter.com</p>
+                        <p>Email: contact@speedyloancenter.com</p>
                       </div>
                     </div>
                   </div>
@@ -589,14 +589,14 @@ export default function PrivacyPolicyPage() {
                   <div className="compact-content">
                     <h4>Contact Us</h4>
                     <div className="contact-details">
-                      <div className="company-name">Speed Loan Center</div>
+                      <div className="company-name">speedy Loan Center</div>
                       <div className="contact-item">
                         <span className="contact-label">Email:</span>
-                        <span className="contact-value">contact@speedloancenter.com</span>
+                        <span className="contact-value">contact@speedyloancenter.com</span>
                       </div>
                       <div className="contact-item">
                         <span className="contact-label">Website:</span>
-                        <span className="contact-value">www.speedloancenter.com</span>
+                        <span className="contact-value">www.speedyloancenter.com</span>
                       </div>
                     </div>
                   </div>

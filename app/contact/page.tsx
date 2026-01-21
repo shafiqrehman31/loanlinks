@@ -16,8 +16,8 @@ export default function ContactUs() {
     {
       icon: '📧',
       title: 'Send Email',
-      details: ['info@speedloancenter.com', 'support@speedloancenter.com'],
-      link: 'mailto:info@speedloancenter.com',
+      details: ['info@speedyloancenter.com', 'support@speedyloancenter.com'],
+      link: 'mailto:info@speedyloancenter.com',
       linkText: 'Send Email',
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
     },
@@ -38,7 +38,7 @@ export default function ContactUs() {
   const faqItems = [
     {
       question: 'What is the best way to contact customer support?',
-      answer: 'You can reach our customer support team by emailing support@speedloancenter.com. We respond to all inquiries within 1-2 business hours during working hours.'
+      answer: 'You can reach our customer support team by emailing support@speedyloancenter.com. We respond to all inquiries within 1-2 business hours during working hours.'
     },
     {
       question: 'Do you serve customers outside of New York?',
@@ -62,19 +62,19 @@ export default function ContactUs() {
     {
       city: 'New York, NY',
       address: '123 Financial District, New York, NY 10005',
-      email: 'nyc@speedloancenter.com',
+      email: 'nyc@speedyloancenter.com',
       hours: 'Mon-Fri: 8AM-7PM EST, Sat: 9AM-5PM EST, Sun: 10AM-4PM EST'
     },
     {
       city: 'Los Angeles, CA',
       address: '456 Sunset Boulevard, Los Angeles, CA 90028',
-      email: 'la@speedloancenter.com',
+      email: 'la@speedyloancenter.com',
       hours: 'Mon-Fri: 9AM-6PM PST, Sat: 10AM-4PM PST, Sun: Closed'
     },
     {
       city: 'Chicago, IL',
       address: '789 Michigan Avenue, Chicago, IL 60611',
-      email: 'chicago@speedloancenter.com',
+      email: 'chicago@speedyloancenter.com',
       hours: 'Mon-Fri: 8AM-6PM CST, Sat: 9AM-3PM CST, Sun: Closed'
     }
   ];
@@ -94,7 +94,7 @@ export default function ContactUs() {
                 <p className="hero-description">
                   Our dedicated team of financial experts is here to help. 
                   Whether you're looking for a home loan, personal loan, or business financing, 
-                  we provide personalized solutions with speed and transparency.
+                  we provide personalized solutions with speedy and transparency.
                 </p>
                 <div className="hero-stats">
                   <div className="stat-item">
@@ -166,7 +166,7 @@ export default function ContactUs() {
                   </p>
                   
                   <div className="contact-methods">
-                    <a href="mailto:appointments@speedloancenter.com" className="contact-method">
+                    <a href="mailto:appointments@speedyloancenter.com" className="contact-method">
                       <div className="contact-method__icon">📅</div>
                       <div className="contact-method__content">
                         <h4>Schedule Appointment</h4>
@@ -175,7 +175,7 @@ export default function ContactUs() {
                       <div className="contact-method__arrow">→</div>
                     </a>
                     
-                    <a href="mailto:info@speedloancenter.com" className="contact-method">
+                    <a href="mailto:info@speedyloancenter.com" className="contact-method">
                       <div className="contact-method__icon">✉️</div>
                       <div className="contact-method__content">
                         <h4>Email Support</h4>
@@ -193,7 +193,7 @@ export default function ContactUs() {
                       <div className="contact-method__arrow">→</div>
                     </a>
                     
-                    <a href="mailto:documents@speedloancenter.com" className="contact-method">
+                    <a href="mailto:documents@speedyloancenter.com" className="contact-method">
                       <div className="contact-method__icon">📄</div>
                       <div className="contact-method__content">
                         <h4>Document Support</h4>
@@ -212,22 +212,22 @@ export default function ContactUs() {
                   <div className="quick-contact">
                     <div className="quick-contact__item">
                       <div className="quick-contact__label">General Inquiries</div>
-                      <a href="mailto:info@speedloancenter.com" className="quick-contact__value">
-                        info@speedloancenter.com
+                      <a href="mailto:info@speedyloancenter.com" className="quick-contact__value">
+                        info@speedyloancenter.com
                       </a>
                     </div>
                     
                     <div className="quick-contact__item">
                       <div className="quick-contact__label">Customer Support</div>
-                      <a href="mailto:support@speedloancenter.com" className="quick-contact__value">
-                        support@speedloancenter.com
+                      <a href="mailto:support@speedyloancenter.com" className="quick-contact__value">
+                        support@speedyloancenter.com
                       </a>
                     </div>
                     
                     <div className="quick-contact__item">
                       <div className="quick-contact__label">Loan Applications</div>
-                      <a href="mailto:applications@speedloancenter.com" className="quick-contact__value">
-                        applications@speedloancenter.com
+                      <a href="mailto:applications@speedyloancenter.com" className="quick-contact__value">
+                        applications@speedyloancenter.com
                       </a>
                     </div>
                     
@@ -382,13 +382,13 @@ export default function ContactUs() {
                     <div className="cta-email__icon">📧</div>
                     <div className="cta-email__content">
                       <div className="cta-email__label">Email for Applications</div>
-                      <a href="mailto:applications@speedloancenter.com" className="cta-email__address">
-                        applications@speedloancenter.com
+                      <a href="mailto:applications@speedyloancenter.com" className="cta-email__address">
+                        applications@speedyloancenter.com
                       </a>
                     </div>
                   </div>
                   <a 
-                    href="mailto:applications@speedloancenter.com" 
+                    href="mailto:applications@speedyloancenter.com" 
                     className="cta-button"
                   >
                     Start Your Application

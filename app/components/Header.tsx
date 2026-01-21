@@ -75,7 +75,7 @@ export default function Header() {
                 {/* Single logo that changes color with CSS filter */}
                 <Image
                   src="/logo-dark.png" // Put your logo in public/logo.png
-                  alt="Speed Loan Center"
+                  alt="speedy Loan Center"
                   width={150}
                   height={50}
                   className="logo-img"
@@ -140,12 +140,12 @@ export default function Header() {
                 <Link href="/" onClick={handleLinkClick} className="mobile-logo-link">
                   <Image
                     src="/logo-dark.png"
-                    alt="Speed Loan Center"
+                    alt="speedy Loan Center"
                     width={150}
                     height={50}
                     className="mobile-logo-img"
                   />
-                  <span className="mobile-logo-text-fallback">Speed Loan Center</span>
+                  <span className="mobile-logo-text-fallback">speedy Loan Center</span>
                 </Link>
               </div>
               <button 
@@ -195,7 +195,7 @@ export default function Header() {
                 <div className="mobile-menu-contact-text">
                   <p>Send Email</p>
                   <h4>
-                    <a href="mailto:info@speedloancenter.com" onClick={handleLinkClick}>info@speedloancenter.com</a>
+                    <a href="mailto:info@speedyloancenter.com" onClick={handleLinkClick}>info@speedyloancenter.com</a>
                   </h4>
                 </div>
               </div>

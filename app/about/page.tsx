@@ -25,7 +25,7 @@ export default function AboutUs() {
                   {/* Main Image */}
                   <Image
                     src="/assets/images/about/about-1-1.png"
-                    alt="About Speed Loan Center"
+                    alt="About speedy Loan Center"
                     width={370}
                     height={512}
                     className="about-one__main-image"
@@ -34,7 +34,7 @@ export default function AboutUs() {
                   {/* Border Image */}
                   <Image
                     src="/assets/images/about/about-1-2.png"
-                    alt="About Speed Loan Center"
+                    alt="About speedy Loan Center"
                     width={250}
                     height={200}
                     className="about-one__image__with-border"
@@ -89,7 +89,7 @@ export default function AboutUs() {
                       <div className="sec-title__shape__one"></div>
                       <div className="sec-title__shape__two"></div>
                     </div>
-                    <h6 className="sec-title__tagline">welcome to speed loan center</h6>
+                    <h6 className="sec-title__tagline">welcome to speedy loan center</h6>
                   </div>
                   <h3 className="sec-title__title">
                     Our Loans Will Make Your <br /> Dreams Come True
@@ -99,7 +99,7 @@ export default function AboutUs() {
                 {/* Text Content */}
                 <div className="about-one__text-box wow fadeInUp" data-wow-duration="1500ms">
                   <p className="about-one__text">
-                    At Speed Loan Center, we believe that financial assistance should be accessible, 
+                    At speedy Loan Center, we believe that financial assistance should be accessible, 
                     transparent, and fast. Our mission is to provide individuals and businesses with 
                     quick loan solutions without the traditional banking bureaucracy.
                   </p>
@@ -241,7 +241,7 @@ export default function AboutUs() {
                   <div className="why-choose-one__image__one">
                     <Image
                       src="/assets/images/resources/why-choose-1-1.png"
-                      alt="Why choose Speed Loan Center"
+                      alt="Why choose speedy Loan Center"
                       width={500}
                       height={350}
                       className="why-choose-one__main-image"
@@ -258,7 +258,7 @@ export default function AboutUs() {
                   <div className="why-choose-one__image__two">
                     <Image
                       src="/assets/images/resources/why-choose-shape-1-2.png"
-                      alt="Customer service at Speed Loan Center"
+                      alt="Customer service at speedyy Loan Center"
                       width={400}
                       height={250}
                       className="why-choose-one__secondary-image"

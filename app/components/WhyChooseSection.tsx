@@ -81,13 +81,13 @@ export default function WhyChooseSection() {
                   <h6 className="sec-title__tagline">WHAT WE RE DOING</h6>
                 </div>
                 <h3 className="sec-title__title">
-                  Why You Should Choose <br /> Speed Loan Center?
+                  Why You Should Choose <br /> speedy Loan Center?
                 </h3>
               </div>
               
               <div className="why-choose-two__text-box wow fadeInUp" data-wow-duration="1500ms">
                 <p className="why-choose-two__text">
-                 Speed Loan Center offers fast approvals with a simple and transparent process. We focus on fair terms, security, and customer satisfaction.
+                 speedy Loan Center offers fast approvals with a simple and transparent process. We focus on fair terms, security, and customer satisfaction.
                 </p>
               </div>
               
