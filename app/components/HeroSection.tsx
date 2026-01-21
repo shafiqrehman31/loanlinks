@@ -1,13 +1,14 @@
 'use client';
 
-import Slider from 'react-slick';
 import Link from 'next/link';
-import { useRef } from 'react';
+
+import Slider from "react-slick";
+import { useRef } from "react";
 
 export default function HeroSection() {
-  const mainSlider = useRef<Slider | null>(null);
-  const counterSlider = useRef<Slider | null>(null);
-
+  const mainSlider = useRef<typeof Slider | null>(null);
+  const counterSlider = useRef<typeof Slider | null>(null);
+  
   const mainSettings = {
     slidesToShow: 1,
     slidesToScroll: 1,

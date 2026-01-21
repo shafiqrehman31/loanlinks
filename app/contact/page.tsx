@@ -383,7 +383,7 @@ export default function ContactUs() {
       </section>
 
       {/* Add CSS Styles */}
-      <style jsx global>{`
+      <style>{`
         /* ============================================
            CONTACT PAGE STYLES
         ============================================= */

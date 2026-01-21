@@ -306,7 +306,7 @@ export default function HowItWorks() {
       </section>
 
       {/* Add CSS Styles */}
-      <style jsx global>{`
+     <style>{`
         /* ============================================
            HOW IT WORKS PAGE STYLES
         ============================================= */

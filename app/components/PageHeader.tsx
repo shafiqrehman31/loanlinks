@@ -72,7 +72,7 @@ export default function PageHeader({ title, backgroundImage }: PageHeaderProps) 
       </div>
 
       {/* CSS Styles */}
-      <style jsx>{`
+      <style>{`
         /* Page Header Styles */
     
       `}</style>

@@ -1008,7 +1008,7 @@ export default function ApplyLoan() {
       </section>
 
       {/* Add CSS Styles */}
-      <style jsx global>{`
+      <style>{`
         /* ============================================
            APPLY LOAN PAGE STYLES
         ============================================= */

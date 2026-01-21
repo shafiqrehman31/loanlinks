@@ -279,15 +279,6 @@ export default function AboutUs() {
           className="why-choose-one__shape"
         />
       </section>
-
-      {/* Add CSS Styles */}
-      <style jsx global>{`
-        /* ============================================
-           INNER PAGES STYLES - Modern & Attractive Design
-        ============================================= */
-        
-       
-      `}</style>
-    </div>
+     </div>
   );
 }

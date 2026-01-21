@@ -64,44 +64,109 @@ export default function Header() {
   };
 
   return (
-    <header className={`main-header main-header--three sticky-header sticky-header--three ${isSticky ? 'sticky-header--active' : ''} ${!isHomePage ? 'inner-page' : ''}`}>
-      <div className="container-fluid">
-        <div className="main-header__inner">
-          
-          {/* Logo */}
-          <div className="main-header__logo logo-retina">
-            <Link href="/">
-              <Image
-                src="/assets/images/logo-dark.png"
-                alt="Speed Loan Center"
-                width={150}
-                height={50}
-                className="main-header__logo__dark"
-                priority
-              />
-              <Image
-                src="/assets/images/logo-light.png"
-                alt="Speed Loan Center"
-                width={150}
-                height={50}
-                className="main-header__logo__light"
-                priority
-              />
-            </Link>
-          </div>
-
-          <div className="main-header__right">
+    <>
+      <header className={`main-header main-header--three sticky-header sticky-header--three ${isSticky ? 'sticky-header--active' : ''} ${!isHomePage ? 'inner-page' : ''}`}>
+        <div className="container-fluid">
+          <div className="main-header__inner">
             
-            {/* Desktop Navigation */}
-            <nav className="main-header__nav main-menu">
-              <ul className="main-menu__list">
+            {/* Logo - SIMPLIFIED SOLUTION */}
+            <div className="main-header__logo">
+              <Link href="/" className="logo-link">
+                {/* Single logo that changes color with CSS filter */}
+                <Image
+                  src="/logo-dark.png" // Put your logo in public/logo.png
+                  alt="Speed Loan Center"
+                  width={150}
+                  height={50}
+                  className="logo-img"
+                  priority
+                />
+                {/* Text fallback */}
+                <span className="logo-text-fallback">Speed Loan Center</span>
+              </Link>
+            </div>
+
+            <div className="main-header__right">
+              
+              {/* Desktop Navigation */}
+              <nav className="main-header__nav main-menu">
+                <ul className="main-menu__list">
+                  {menuItems.map((item) => {
+                    const active = isActive(item.href);
+                    return (
+                      <li key={item.name} className="scrollToLink">
+                        <Link 
+                          href={item.href} 
+                          className={`nav-link ${active ? 'active' : ''}`}
+                        >
+                          {item.name}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </nav>
+
+              {/* Mobile Menu Toggle Button */}
+              <button 
+                className={`mobile-nav-toggle ${isMenuOpen ? 'active' : ''}`}
+                onClick={toggleMobileMenu}
+                aria-label="Toggle mobile menu"
+                aria-expanded={isMenuOpen}
+              >
+                <span className="hamburger-line"></span>
+                <span className="hamburger-line"></span>
+                <span className="hamburger-line"></span>
+              </button>
+
+              {/* Loan Quote Button */}
+              <Link href="/apply-loan" className="easilon-btn main-header__btn">
+                <span>Loan Quote</span>
+                <span className="easilon-btn__icon">
+                  <i className="icon-right-arrow">→</i>
+                </span>
+              </Link>
+
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Navigation */}
+        <div className={`mobile-menu-overlay ${isMenuOpen ? 'active' : ''}`} onClick={toggleMobileMenu}></div>
+        <div className={`mobile-menu ${isMenuOpen ? 'active' : ''}`}>
+          <div className="mobile-menu-content">
+            <div className="mobile-menu-header">
+              <div className="mobile-menu-logo">
+                <Link href="/" onClick={handleLinkClick} className="mobile-logo-link">
+                  <Image
+                    src="/logo-dark.png"
+                    alt="Speed Loan Center"
+                    width={150}
+                    height={50}
+                    className="mobile-logo-img"
+                  />
+                  <span className="mobile-logo-text-fallback">Speed Loan Center</span>
+                </Link>
+              </div>
+              <button 
+                className="mobile-menu-close" 
+                onClick={toggleMobileMenu}
+                aria-label="Close mobile menu"
+              >
+                ×
+              </button>
+            </div>
+            
+            <nav className="mobile-menu-nav">
+              <ul>
                 {menuItems.map((item) => {
                   const active = isActive(item.href);
                   return (
-                    <li key={item.name} className="scrollToLink">
+                    <li key={item.name}>
                       <Link 
                         href={item.href} 
-                        className={`nav-link ${active ? 'active' : ''}`}
+                        onClick={handleLinkClick}
+                        className={`mobile-menu-link ${active ? 'active' : ''}`}
                       >
                         {item.name}
                       </Link>
@@ -110,119 +175,124 @@ export default function Header() {
                 })}
               </ul>
             </nav>
+            
+            <div className="mobile-menu-contact">
+              <div className="mobile-menu-contact-item">
+                <div className="mobile-menu-contact-icon">
+                  <i className="icon-phone">📞</i>
+                </div>
+                <div className="mobile-menu-contact-text">
+                  <p>Call Anytime</p>
+                  <h4>
+                    <a href="tel:+9156980036420" onClick={handleLinkClick}>+91 5698 0036 420</a>
+                  </h4>
+                </div>
+              </div>
+              <div className="mobile-menu-contact-item">
+                <div className="mobile-menu-contact-icon">
+                  <i className="icon-email">✉️</i>
+                </div>
+                <div className="mobile-menu-contact-text">
+                  <p>Send Email</p>
+                  <h4>
+                    <a href="mailto:info@speedloancenter.com" onClick={handleLinkClick}>info@speedloancenter.com</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mobile-menu-social">
+              <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f">FB</i></a>
+              <a href="#" aria-label="Twitter"><i className="fab fa-twitter">TW</i></a>
+              <a href="#" aria-label="Instagram"><i className="fab fa-instagram">IG</i></a>
+            </div>
 
-            {/* Mobile Menu Toggle Button */}
-            <button 
-              className={`mobile-nav-toggle ${isMenuOpen ? 'active' : ''}`}
-              onClick={toggleMobileMenu}
-              aria-label="Toggle mobile menu"
-              aria-expanded={isMenuOpen}
-            >
-              <span className="hamburger-line"></span>
-              <span className="hamburger-line"></span>
-              <span className="hamburger-line"></span>
-            </button>
-
-            {/* Loan Quote Button */}
-            <Link href="/apply-loan" className="easilon-btn main-header__btn">
-              <span>Loan Quote</span>
-              <span className="easilon-btn__icon">
-                <i className="icon-right-arrow"></i>
-              </span>
-            </Link>
-
-          </div>
-        </div>
-      </div>
-
-      {/* Mobile Navigation */}
-      <div className={`mobile-menu-overlay ${isMenuOpen ? 'active' : ''}`} onClick={toggleMobileMenu}></div>
-      <div className={`mobile-menu ${isMenuOpen ? 'active' : ''}`}>
-        <div className="mobile-menu-content">
-          <div className="mobile-menu-header">
-            <div className="mobile-menu-logo">
-              <Link href="/" onClick={handleLinkClick}>
-                <Image
-                  src="/assets/images/logo-dark.png"
-                  alt="Speed Loan Center"
-                  width={150}
-                  height={50}
-                />
+            {/* Mobile Loan Quote Button */}
+            <div className="mobile-menu-quote-btn">
+              <Link href="/apply-loan" className="easilon-btn" onClick={handleLinkClick}>
+                <span>Get Loan Quote</span>
+                <span className="easilon-btn__icon">
+                  <i className="icon-right-arrow">→</i>
+                </span>
               </Link>
             </div>
-            <button 
-              className="mobile-menu-close" 
-              onClick={toggleMobileMenu}
-              aria-label="Close mobile menu"
-            >
-              ×
-            </button>
-          </div>
-          
-          <nav className="mobile-menu-nav">
-            <ul>
-              {menuItems.map((item) => {
-                const active = isActive(item.href);
-                return (
-                  <li key={item.name}>
-                    <Link 
-                      href={item.href} 
-                      onClick={handleLinkClick}
-                      className={`mobile-menu-link ${active ? 'active' : ''}`}
-                    >
-                      {item.name}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </nav>
-          
-          <div className="mobile-menu-contact">
-            <div className="mobile-menu-contact-item">
-              <div className="mobile-menu-contact-icon">
-                <i className="icon-phone"></i>
-              </div>
-              <div className="mobile-menu-contact-text">
-                <p>Call Anytime</p>
-                <h4>
-                  <a href="tel:+9156980036420" onClick={handleLinkClick}>+91 5698 0036 420</a>
-                </h4>
-              </div>
-            </div>
-            <div className="mobile-menu-contact-item">
-              <div className="mobile-menu-contact-icon">
-                <i className="icon-email"></i>
-              </div>
-              <div className="mobile-menu-contact-text">
-                <p>Send Email</p>
-                <h4>
-                  <a href="mailto:info@speedloancenter.com" onClick={handleLinkClick}>info@speedloancenter.com</a>
-                </h4>
-              </div>
-            </div>
-          </div>
-          
-          <div className="mobile-menu-social">
-            <a href="#"><i className="fab fa-facebook-f"></i></a>
-            <a href="#"><i className="fab fa-twitter"></i></a>
-            <a href="#"><i className="fab fa-instagram"></i></a>
-          </div>
-
-          {/* Mobile Loan Quote Button */}
-          <div className="mobile-menu-quote-btn">
-            <Link href="/apply-loan" className="easilon-btn" onClick={handleLinkClick}>
-              <span>Get Loan Quote</span>
-              <span className="easilon-btn__icon">
-                <i className="icon-right-arrow"></i>
-              </span>
-            </Link>
           </div>
         </div>
-      </div>
+      </header>
 
-      {/* CSS Styles - FIXED ACTIVE MENU WITH UNDERLINE */}
-      <style jsx>{`
+      <style>{`
+        /* ============================================
+           LOGO STYLES - 100% WORKING
+        ============================================ */
+        .main-header__logo {
+          position: relative;
+          z-index: 1001;
+          display: flex;
+          align-items: center;
+        }
+        
+        .logo-link {
+          display: block !important;
+          width: 150px;
+          height: 50px;
+          position: relative;
+          text-decoration: none;
+        }
+        
+        .logo-img {
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: contain !important;
+          transition: filter 0.3s ease;
+        }
+        
+        .logo-text-fallback {
+          display: none;
+          color: ${isSticky || !isHomePage ? 'white' : '#333'};
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 50px;
+        }
+        
+        /* If image fails to load, show text */
+        .logo-link:has(img[data-failed]) .logo-img {
+          display: none;
+        }
+        
+        .logo-link:has(img[data-failed]) .logo-text-fallback {
+          display: block;
+        }
+        
+        /* Mobile logo */
+        .mobile-logo-link {
+          display: block;
+          width: 150px;
+          height: 50px;
+          position: relative;
+        }
+        
+        .mobile-logo-img {
+          width: 100% !important;
+          height: auto !important;
+          object-fit: contain !important;
+        }
+        
+        .mobile-logo-text-fallback {
+          display: none;
+          color: #333;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 50px;
+        }
+        
+        .mobile-logo-link:has(img[data-failed]) .mobile-logo-img {
+          display: none;
+        }
+        
+        .mobile-logo-link:has(img[data-failed]) .mobile-logo-text-fallback {
+          display: block;
+        }
+        
         /* ============================================
            BASE HEADER STYLES
         ============================================ */
@@ -234,7 +304,21 @@ export default function Header() {
           z-index: 1000;
           background: transparent;
           transition: all 0.3s ease;
-          padding: 0px 0;
+          padding: 15px 0;
+        }
+        
+        .container-fluid {
+          width: 100%;
+          padding: 0 15px;
+          margin: 0 auto;
+          max-width: 1200px;
+        }
+        
+        .main-header__inner {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
         }
         
         /* ============================================
@@ -243,14 +327,6 @@ export default function Header() {
         .main-header.inner-page {
           background: #262626 !important;
           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .main-header.inner-page .main-header__logo__dark {
-          opacity: 0;
-        }
-        
-        .main-header.inner-page .main-header__logo__light {
-          opacity: 1;
         }
         
         .main-header.inner-page .nav-link {
@@ -273,14 +349,6 @@ export default function Header() {
           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         
-        .sticky-header--active .main-header__logo__dark {
-          opacity: 0;
-        }
-        
-        .sticky-header--active .main-header__logo__light {
-          opacity: 1;
-        }
-        
         .sticky-header--active .nav-link {
           color: white !important;
         }
@@ -294,7 +362,16 @@ export default function Header() {
         }
         
         /* ============================================
-           DESKTOP NAVIGATION - ACTIVE MENU FIX
+           RIGHT SECTION
+        ============================================ */
+        .main-header__right {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+        }
+        
+        /* ============================================
+           DESKTOP NAVIGATION
         ============================================ */
         .main-menu__list {
           display: flex;
@@ -340,32 +417,50 @@ export default function Header() {
           width: 100%;
         }
         
-        /* ============================================
-           ACTIVE MENU ITEM - FIXED WITH UNDERLINE
-        ============================================ */
-        /* Active menu item - Red color */
+        /* Active menu item */
         .nav-link.active {
           color: #E45551 !important;
           font-weight: 600;
         }
         
-        /* Active menu item underline - ALWAYS SHOW */
         .nav-link.active::after {
           width: 100% !important;
           background: #E45551 !important;
           bottom: -5px;
         }
         
-        /* Active on dark background - Still red with underline */
+        /* Active on dark background */
         .main-header.inner-page .nav-link.active,
         .sticky-header--active .nav-link.active {
           color: #E45551 !important;
         }
         
-        .main-header.inner-page .nav-link.active::after,
-        .sticky-header--active .nav-link.active::after {
-          width: 100% !important;
-          background: #E45551 !important;
+        /* ============================================
+           BUTTON STYLES
+        ============================================ */
+        .easilon-btn {
+          background: #E45551;
+          border: none;
+          padding: 12px 25px;
+          font-weight: 600;
+          transition: all 0.3s ease;
+          color: white;
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        .easilon-btn:hover {
+          background: #d14541;
+          transform: translateY(-2px);
+        }
+        
+        .easilon-btn__icon {
+          display: inline-flex;
+          align-items: center;
         }
         
         /* ============================================
@@ -407,7 +502,7 @@ export default function Header() {
         }
         
         /* ============================================
-           MOBILE MENU
+           MOBILE MENU OVERLAY
         ============================================ */
         .mobile-menu-overlay {
           position: fixed;
@@ -427,6 +522,9 @@ export default function Header() {
           visibility: visible;
         }
         
+        /* ============================================
+           MOBILE MENU
+        ============================================ */
         .mobile-menu {
           position: fixed;
           top: 0;
@@ -470,6 +568,13 @@ export default function Header() {
           padding-bottom: 20px;
           border-bottom: 1px solid #eee;
           margin-bottom: 30px;
+        }
+        
+        .mobile-menu-logo {
+          width: 150px;
+          height: 50px;
+          display: flex;
+          align-items: center;
         }
         
         .mobile-menu-close {
@@ -537,45 +642,6 @@ export default function Header() {
           border-radius: 50%;
         }
         
-        /* ============================================
-           ORIGINAL CSS
-        ============================================ */
-        .main-header__logo {
-          position: relative;
-        }
-        
-        .main-header__logo__dark {
-          opacity: 1;
-          transition: opacity 0.3s ease;
-        }
-        
-        .main-header__logo__light {
-          opacity: 0;
-          position: absolute;
-          left: 0;
-          top: 0;
-          transition: opacity 0.3s ease;
-        }
-        
-        .main-header__btn {
-          background: #E45551;
-          border: none;
-          padding: 12px 25px;
-          font-weight: 600;
-          transition: all 0.3s ease;
-          color: white;
-          text-decoration: none;
-          display: inline-flex;
-          align-items: center;
-          gap: 10px;
-          border-radius: 4px;
-        }
-        
-        .main-header__btn:hover {
-          background: #d14541;
-          transform: translateY(-2px);
-        }
-        
         /* Mobile contact */
         .mobile-menu-contact {
           margin-top: 30px;
@@ -599,6 +665,7 @@ export default function Header() {
           justify-content: center;
           margin-right: 15px;
           color: white;
+          font-style: normal;
         }
         
         .mobile-menu-contact-text p {
@@ -635,6 +702,7 @@ export default function Header() {
           justify-content: center;
           color: #333;
           text-decoration: none;
+          font-style: normal;
         }
         
         /* Mobile quote button */
@@ -661,9 +729,24 @@ export default function Header() {
           .mobile-nav-toggle {
             display: flex;
           }
+          
+          .main-header__btn {
+            display: none;
+          }
         }
         
-        /* Full width mobile menu on very small screens */
+        /* Tablet styles */
+        @media (max-width: 768px) {
+          .container-fluid {
+            padding: 0 20px;
+          }
+          
+          .main-header {
+            padding: 12px 0;
+          }
+        }
+        
+        /* Mobile styles */
         @media (max-width: 480px) {
           .mobile-menu {
             width: 100%;
@@ -673,8 +756,39 @@ export default function Header() {
           .mobile-menu.active {
             right: 0;
           }
+          
+          .mobile-menu-content {
+            padding: 20px;
+          }
+          
+          .main-header__logo,
+          .mobile-menu-logo {
+            width: 130px;
+            height: 45px;
+          }
+          
+          .logo-link,
+          .mobile-logo-link {
+            width: 130px !important;
+            height: 45px !important;
+          }
+        }
+        
+        /* Small mobile styles */
+        @media (max-width: 360px) {
+          .main-header__logo,
+          .mobile-menu-logo {
+            width: 120px;
+            height: 40px;
+          }
+          
+          .logo-link,
+          .mobile-logo-link {
+            width: 120px !important;
+            height: 40px !important;
+          }
         }
       `}</style>
-    </header>
+    </>
   );
 }
