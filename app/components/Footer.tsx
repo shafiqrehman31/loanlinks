@@ -42,13 +42,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="mb-2">
-                <Link href="/services" className="text-white text-decoration-none">
-                  Services
+                <Link href="/how-it-works" className="text-white text-decoration-none">
+                  How it Works
                 </Link>
               </li>
               <li className="mb-2">
-                <Link href="/apply" className="text-white text-decoration-none">
-                  Apply Now
+                <Link href="/apply-loan" className="text-white text-decoration-none">
+                  Loan Quote
                 </Link>
               </li>
             </ul>

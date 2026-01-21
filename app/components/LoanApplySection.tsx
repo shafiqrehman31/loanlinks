@@ -129,7 +129,7 @@ export default function LoanApplySection() {
         <div 
           className="loan-two__inner wow fadeInUp" 
           data-wow-duration="1500ms"
-          style={{ backgroundImage: "url(/assets/images/resources/loan-bg-2-1.jpg)" }}
+          style={{ backgroundImage: "url(/assets/images/resources/why-choose-2-1.png)" }}
         >
           <div className="loan-two__form">
             <div 

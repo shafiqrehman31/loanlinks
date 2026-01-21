@@ -4,32 +4,32 @@ const processSteps = [
   {
     id: 1,
     image: "/assets/images/working-process/1.png",
-    title: "Application submit",
-    description: "In a free hour, when our power o choice is untrammelled and when nothing prevents",
+    title: "Discover Your Loan Options Instantly",
+    description: "Complete our fast and secure loan request form—just a few minutes, no impact on your credit score, and get personalized offers tailored for you.",
     delay: 0,
     isDown: false,
   },
   {
     id: 2,
     image: "/assets/images/working-process/2.png",
-    title: "Review & Verification",
-    description: "Back to the drawing-board show grit, for we should have a meeting to discuss the details",
+    title: "Fast & Secure Review",
+    description: "Our team carefully reviews your application and verifies the details to ensure a smooth and secure approval process hassle-free and transparent.",
     delay: 100,
     isDown: true,
   },
   {
     id: 3,
     image: "/assets/images/working-process/3.png",
-    title: "Loan Approval",
-    description: "Hit the ground running do i have consent to record this meeting quick sync helicopter view",
+    title: "Quick Loan Approval",
+    description: "Once your application is verified, receive fast loan approval and get your funds directly simple, reliable, and stress-free.",
     delay: 200,
     isDown: false,
   },
   {
     id: 4,
     image: "/assets/images/working-process/4.png",
-    title: "Loan disbursement",
-    description: "Radical candor upsell this is a no-brainer no need to talk to users, just base it on the",
+    title: "Fast & Secure Fund Disbursement",
+    description: "Once approved, your loan amount is transferred directly to your account quickly and securely, so you can access the funds exactly when you need them.",
     delay: 300,
     isDown: true,
   },
@@ -67,8 +67,8 @@ function ProcessStep({ step }: ProcessStepProps) {
           <Image
             src={step.image}
             alt={step.title}
-            width={200}
-            height={200}
+            width={130}
+            height={130}
           />
           <div className="work-process-one__item__number">step</div>
           <ProcessShape />

@@ -35,7 +35,7 @@ export default function PageHeader({ title, backgroundImage }: PageHeaderProps) 
   };
 
   const breadcrumbs = getBreadcrumbs();
-  const defaultBgImage = '/assets/images/backgrounds/page-header-bg-1-1.jpg';
+  const defaultBgImage = '/assets/images/backgrounds/speedloancenter-innerpage-header.png';
   const bgImage = backgroundImage || defaultBgImage;
 
   return (

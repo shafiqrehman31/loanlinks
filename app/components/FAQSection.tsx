@@ -226,8 +226,7 @@ export default function FAQSection() {
           max-width: 1200px;
           margin: 0 auto;
           padding: 0 20px;
-          position: relative;
-          z-index: 1;
+      
         }
 
         /* Section Header */

@@ -113,7 +113,7 @@ export default function WhyChooseSection() {
             <div className="why-choose-two__image">
               <div 
                 className="why-choose-two__image__bg" 
-                style={{ backgroundImage: "url(/assets/images/resources/why-choose-2-1.png" }}
+                style={{ backgroundImage: "url(/assets/images/about/about-us-main-support.png" }}
               ></div>
               <Image
                 src="/assets/images/shapes/why-choose-shape-2-1.png"

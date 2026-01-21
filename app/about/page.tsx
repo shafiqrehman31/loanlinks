@@ -24,7 +24,7 @@ export default function AboutUs() {
                 <div className="about-one__image__inner">
                   {/* Main Image */}
                   <Image
-                    src="/assets/images/about/about-1-1.jpg"
+                    src="/assets/images/about/about-1-1.png"
                     alt="About Speed Loan Center"
                     width={370}
                     height={512}
@@ -33,7 +33,7 @@ export default function AboutUs() {
                   
                   {/* Border Image */}
                   <Image
-                    src="/assets/images/about/about-1-2.jpg"
+                    src="/assets/images/about/about-1-2.png"
                     alt="About Speed Loan Center"
                     width={250}
                     height={200}
@@ -60,7 +60,7 @@ export default function AboutUs() {
                     
                     <div className="about-one__experience__content">
                       <Link 
-                        href="https://www.youtube.com/watch?v=h9MbznbxlLc" 
+                        href="#" 
                         className="video-btn video-popup"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -240,7 +240,7 @@ export default function AboutUs() {
                 <div className="why-choose-one__image__inner">
                   <div className="why-choose-one__image__one">
                     <Image
-                      src="/assets/images/resources/why-choose-1-1.jpg"
+                      src="/assets/images/resources/why-choose-1-1.png"
                       alt="Why choose Speed Loan Center"
                       width={500}
                       height={350}
@@ -257,7 +257,7 @@ export default function AboutUs() {
                   
                   <div className="why-choose-one__image__two">
                     <Image
-                      src="/assets/images/resources/why-choose-1-2.jpg"
+                      src="/assets/images/resources/why-choose-shape-1-2.png"
                       alt="Customer service at Speed Loan Center"
                       width={400}
                       height={250}

@@ -1,4 +1,3 @@
-// app/how-it-works/page.tsx
 'use client';
 
 import { useEffect } from 'react';
@@ -82,7 +81,8 @@ export default function HowItWorks() {
 
   return (
     <div className="how-it-works-page">
-        <PageHeader title="How It Work" />
+      <PageHeader title="How It Work" />
+      
       {/* Hero Section */}
       <section className="process-hero section-space">
         <div className="container">
@@ -119,20 +119,13 @@ export default function HowItWorks() {
                      data-wow-duration="1500ms">
                   <div className="process-step__inner">
                     <div className="process-step__image">
-                      <Image
-                        src={step.image}
-                        alt={step.title}
-                        width={500}
-                        height={350}
-                        className="process-step__img"
-                      />
                       <div className="process-step__number">
                         <span className="process-step__number-bg"></span>
                         <span className="process-step__number-text">{step.number}</span>
                       </div>
+                      <div className="process-step__icon-large">{step.icon}</div>
                     </div>
                     <div className="process-step__content">
-                      <div className="process-step__icon">{step.icon}</div>
                       <h3 className="process-step__title">{step.title}</h3>
                       <p className="process-step__description">{step.description}</p>
                       <div className="process-step__time">
@@ -153,6 +146,102 @@ export default function HowItWorks() {
         </div>
       </section>
 
+      {/* Loan Summary Table Section */}
+      <section className="loan-summary section-space">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 text-center">
+              <div className="section-header">
+                <div className="hadding">
+                  <span className="span-two">Loan Summary</span>
+                  <h2 className="position-relative fw-700">Detailed APR Cost Examples</h2>
+                  <p>Compare loan options with transparent pricing and see exactly what you'll pay over time. All examples include fees and interest for full cost disclosure.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="row">
+            <div className="table-data">
+              <div className="table-wrapper">
+                <table>
+                  <thead>
+                    <tr>
+                      <td>Loan Amount</td>
+                      <td>$1,000</td>
+                      <td>$2,000</td>
+                      <td>$2,500</td>
+                      <td>$5,000</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Interest Rate</td>
+                      <td>24.00%</td>
+                      <td>19.00%</td>
+                      <td>16.00%</td>
+                      <td>13.00%</td>
+                    </tr>
+                    <tr>
+                      <td>Loan Term</td>
+                      <td>12 months</td>
+                      <td>24 months</td>
+                      <td>36 months</td>
+                      <td>48 months</td>
+                    </tr>
+                    <tr>
+                      <td>Fee</td>
+                      <td>3.00%</td>
+                      <td>5.00%</td>
+                      <td>10.00%</td>
+                      <td>12.00%</td>
+                    </tr>
+                    <tr>
+                      <td>Monthly Payment</td>
+                      <td>$94.56</td>
+                      <td>$100.82</td>
+                      <td>$87.89</td>
+                      <td>$131.67</td>
+                    </tr>
+                    <tr>
+                      <td>APR</td>
+                      <td>29.82%</td>
+                      <td>24.12%</td>
+                      <td>22.93%</td>
+                      <td>18.23%</td>
+                    </tr>
+                    <tr>
+                      <td>Total Payments</td>
+                      <td>$1,134.72</td>
+                      <td>$2,419.68</td>
+                      <td>$3,164.13</td>
+                      <td>$6,320.12</td>
+                    </tr>
+                    <tr>
+                      <td>Total Cost</td>
+                      <td>$164.72</td>
+                      <td>$519.68</td>
+                      <td>$914.13</td>
+                      <td>$1,920.12</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+              <div className="info-box">
+                <div className="info-icon">
+                  ℹ️
+                </div>
+                <div className="info-content">
+                  <h4>Understanding Your Loan Costs</h4>
+                  <p>APR (Annual Percentage Rate) includes both interest and fees to give you a complete picture of loan costs. Lower APR generally means lower total cost over the life of the loan. These examples are for illustrative purposes only. Actual rates and terms may vary based on creditworthiness.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Requirements Section */}
       <section className="requirements-section section-space" style={{ background: '#f8f9fa' }}>
         <div className="container">
@@ -160,13 +249,6 @@ export default function HowItWorks() {
             <div className="col-lg-6 wow fadeInLeft" data-wow-duration="1500ms">
               <div className="requirements-image">
                 <div className="requirements-image__inner">
-                  <Image
-                    src="/assets/images/how-it-works/requirements.jpg"
-                    alt="Loan Requirements"
-                    width={500}
-                    height={400}
-                    className="requirements-image__main"
-                  />
                   <div className="requirements-image__badge">
                     <div className="requirements-image__badge-content">
                       <span className="requirements-image__badge-icon">📋</span>
@@ -289,13 +371,13 @@ export default function HowItWorks() {
                   <Link href="/apply-loan" className="easilon-btn easilon-btn--light">
                     <span>Apply for Loan Now</span>
                     <span className="easilon-btn__icon">
-                      <i className="icon-double-right-arrow">→</i>
+                      →
                     </span>
                   </Link>
                   <Link href="/contact" className="easilon-btn easilon-btn--outline">
                     <span>Contact Our Experts</span>
                     <span className="easilon-btn__icon">
-                      <i className="icon-double-right-arrow">→</i>
+                      →
                     </span>
                   </Link>
                 </div>
@@ -306,7 +388,7 @@ export default function HowItWorks() {
       </section>
 
       {/* Add CSS Styles */}
-     <style>{`
+      <style>{`
         /* ============================================
            HOW IT WORKS PAGE STYLES
         ============================================= */
@@ -340,6 +422,7 @@ export default function HowItWorks() {
           overflow: hidden;
           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
           transition: transform 0.3s ease;
+          height: 100%;
         }
 
         .process-step:hover .process-step__inner {
@@ -349,17 +432,16 @@ export default function HowItWorks() {
         .process-step__image {
           position: relative;
           overflow: hidden;
+          height: 200px;
+          background: linear-gradient(135deg, #E45551 0%, #ff7a75 100%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
-        .process-step__img {
-          width: 100%;
-          height: 250px;
-          object-fit: cover;
-          transition: transform 0.5s ease;
-        }
-
-        .process-step:hover .process-step__img {
-          transform: scale(1.05);
+        .process-step__icon-large {
+          font-size: 80px;
+          opacity: 0.2;
         }
 
         .process-step__number {
@@ -374,7 +456,7 @@ export default function HowItWorks() {
           position: absolute;
           width: 100%;
           height: 100%;
-          background: #E45551;
+          background: white;
           border-radius: 50%;
           opacity: 0.9;
         }
@@ -384,18 +466,13 @@ export default function HowItWorks() {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          color: white;
+          color: #E45551;
           font-size: 20px;
           font-weight: 700;
         }
 
         .process-step__content {
           padding: 30px;
-        }
-
-        .process-step__icon {
-          font-size: 40px;
-          margin-bottom: 15px;
         }
 
         .process-step__title {
@@ -425,7 +502,161 @@ export default function HowItWorks() {
           font-size: 18px;
         }
 
+        /* Loan Summary Table Section */
+        .loan-summary {
+          background: #f8fafc;
+        }
+
+        .hadding {
+          text-align: center;
+          margin-bottom: 60px;
+        }
+
+        .span-two {
+          display: inline-block;
+          color: #E45551;
+          font-size: 16px;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-bottom: 15px;
+          padding: 5px 15px;
+          background: rgba(228, 85, 81, 0.1);
+          border-radius: 20px;
+        }
+
+        .hadding h2 {
+          font-size: 42px;
+          font-weight: 700;
+          color: #1e293b;
+          margin-bottom: 20px;
+          line-height: 1.2;
+        }
+
+        .hadding p {
+          font-size: 18px;
+          color: #64748b;
+          line-height: 1.6;
+          max-width: 700px;
+          margin: 0 auto;
+        }
+
+        .table-data {
+          width: 100%;
+        }
+
+        .table-wrapper {
+          overflow-x: auto;
+          background: white;
+          border-radius: 15px;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+          margin-bottom: 40px;
+        }
+
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          min-width: 800px;
+        }
+
+        table thead {
+          background: linear-gradient(135deg, #E45551 0%, #ff7a75 100%);
+        }
+
+        table thead tr td {
+          color: white;
+          font-weight: 600;
+          padding: 25px 20px;
+          font-size: 18px;
+          text-align: center;
+          border: none;
+        }
+
+        table thead tr td:first-child {
+          border-radius: 15px 0 0 0;
+        }
+
+        table thead tr td:last-child {
+          border-radius: 0 15px 0 0;
+        }
+
+        table tbody tr {
+          transition: all 0.3s ease;
+        }
+
+        table tbody tr:hover {
+          background: #f8fafc;
+          transform: translateY(-2px);
+        }
+
+        table tbody tr:nth-child(even) {
+          background: #f8fafc;
+        }
+
+        table tbody tr td {
+          padding: 20px;
+          text-align: center;
+          border-bottom: 1px solid #e2e8f0;
+          font-size: 16px;
+          color: #475569;
+        }
+
+        table tbody tr:last-child td {
+          border-bottom: none;
+        }
+
+        table tbody tr td:first-child {
+          font-weight: 600;
+          color: #1e293b;
+          text-align: left;
+          background: #f1f5f9;
+          width: 250px;
+        }
+
+        table tbody tr:nth-child(4) td,
+        table tbody tr:nth-child(5) td,
+        table tbody tr:nth-child(7) td {
+          font-weight: 700;
+          color: #E45551;
+          font-size: 18px;
+        }
+
+        /* Info Box */
+        .info-box {
+          background: #f0f9ff;
+          border: 2px solid #bae6fd;
+          border-radius: 15px;
+          padding: 30px;
+          display: flex;
+          gap: 20px;
+          align-items: flex-start;
+        }
+
+        .info-icon {
+          font-size: 32px;
+          color: #0ea5e9;
+          flex-shrink: 0;
+        }
+
+        .info-content h4 {
+          margin: 0 0 15px 0;
+          color: #0369a1;
+          font-size: 20px;
+          font-weight: 600;
+        }
+
+        .info-content p {
+          margin: 0;
+          color: #0c4a6e;
+          line-height: 1.6;
+          font-size: 16px;
+        }
+
         /* Requirements Section */
+        .requirements-section {
+          background: #f8f9fa !important;
+        }
+
         .requirements-image {
           position: relative;
         }
@@ -434,13 +665,12 @@ export default function HowItWorks() {
           position: relative;
           max-width: 500px;
           margin: 0 auto;
-        }
-
-        .requirements-image__main {
-          width: 100%;
-          height: auto;
+          min-height: 300px;
+          background: linear-gradient(135deg, #E45551 0%, #ff7a75 100%);
           border-radius: 20px;
-          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         .requirements-image__badge {
@@ -688,6 +918,10 @@ export default function HowItWorks() {
             max-width: 300px;
             justify-content: center;
           }
+          
+          .hadding h2 {
+            font-size: 32px;
+          }
         }
 
         @media (max-width: 768px) {
@@ -701,6 +935,34 @@ export default function HowItWorks() {
           
           .comparison-card__title {
             font-size: 24px;
+          }
+          
+          .hadding h2 {
+            font-size: 28px;
+          }
+          
+          .hadding p {
+            font-size: 16px;
+          }
+          
+          table thead tr td {
+            padding: 15px 10px;
+            font-size: 16px;
+          }
+          
+          table tbody tr td {
+            padding: 15px 10px;
+            font-size: 14px;
+          }
+          
+          .info-box {
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+          }
+          
+          .info-icon {
+            margin: 0 auto;
           }
         }
 
@@ -725,7 +987,7 @@ export default function HowItWorks() {
           margin-right: auto;
         }
 
-        /* Row & Columns (from previous CSS) */
+        /* Row & Columns */
         .row {
           display: flex;
           flex-wrap: wrap;
@@ -748,8 +1010,14 @@ export default function HowItWorks() {
           padding: 0 15px;
         }
 
+        .col-lg-12 {
+          flex: 0 0 100%;
+          max-width: 100%;
+          padding: 0 15px;
+        }
+
         @media (max-width: 991px) {
-          .col-lg-6, .col-lg-8 {
+          .col-lg-6, .col-lg-8, .col-lg-12 {
             flex: 0 0 100%;
             max-width: 100%;
           }
@@ -759,7 +1027,7 @@ export default function HowItWorks() {
           }
         }
 
-        /* Button Styles (from previous CSS) */
+        /* Button Styles */
         .easilon-btn {
           display: inline-flex;
           align-items: center;
@@ -790,7 +1058,7 @@ export default function HowItWorks() {
           transform: translateX(5px);
         }
 
-        /* Section Title (from previous CSS) */
+        /* Section Title */
         .sec-title {
           margin-bottom: 40px;
         }
@@ -854,7 +1122,7 @@ export default function HowItWorks() {
           }
         }
 
-        /* Wow Animations (from previous CSS) */
+        /* Wow Animations */
         .wow {
           visibility: hidden;
         }
@@ -904,14 +1172,14 @@ export default function HowItWorks() {
           }
         }
 
-        /* Container (from previous CSS) */
+        /* Container */
         .container {
           max-width: 1200px;
           margin: 0 auto;
           padding: 0 20px;
         }
 
-        /* Section Spacing (from previous CSS) */
+        /* Section Spacing */
         .section-space {
           padding: 100px 0;
           position: relative;
@@ -923,7 +1191,7 @@ export default function HowItWorks() {
           }
         }
 
-        /* Float Animation (from previous CSS) */
+        /* Float Animation */
         @keyframes float {
           0%, 100% {
             transform: translateY(0);
