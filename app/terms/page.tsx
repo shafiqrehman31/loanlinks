@@ -23,12 +23,18 @@ export default function TermsConditionsPage() {
 
   return (
     <div className="terms-page">
-      <PageHeader 
-        title="Terms and Conditions"
-        subtitle="Please read these terms carefully before using our services"
-      />
+      <PageHeader title="Terms and Conditions" />
       
       <div className="page-content">
+        {/* Subtitle Section */}
+        <div className="page-subtitle">
+          <div className="container">
+            <p className="subtitle-text">
+              Please read these terms carefully before using our services
+            </p>
+          </div>
+        </div>
+
         {/* Important Notice Section */}
         <section className="notice-section">
           <div className="container">
@@ -578,6 +584,21 @@ export default function TermsConditionsPage() {
           padding-bottom: 80px;
         }
 
+        /* Page Subtitle */
+        .page-subtitle {
+          padding: 20px 0;
+          background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+          border-bottom: 1px solid #bae6fd;
+        }
+
+        .subtitle-text {
+          font-size: 18px;
+          color: #0369a1;
+          text-align: center;
+          margin: 0;
+          font-weight: 500;
+        }
+
         .container {
           max-width: 1200px;
           margin: 0 auto;
@@ -1104,7 +1125,7 @@ export default function TermsConditionsPage() {
 
         .responsibility-note {
           background: #fef3c7;
-          border: 1px solid #fde047;
+          border: 1px solid #fcd34d;
           border-radius: 12px;
           padding: 16px;
           color: #92400e;
@@ -1382,6 +1403,10 @@ export default function TermsConditionsPage() {
             width: 100%;
             max-width: 300px;
           }
+
+          .subtitle-text {
+            font-size: 16px;
+          }
         }
 
         @media (max-width: 480px) {
@@ -1413,6 +1438,11 @@ export default function TermsConditionsPage() {
 
           .footer-text p {
             font-size: 16px;
+          }
+
+          .subtitle-text {
+            font-size: 15px;
+            padding: 0 10px;
           }
         }
       `}</style>
