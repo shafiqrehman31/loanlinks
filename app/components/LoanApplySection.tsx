@@ -1,241 +1,316 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import { useEffect } from 'react';
 
-export default function LoanApplySection() {
-  const [loanAmount, setLoanAmount] = useState(10000);
-  const [loanTerm, setLoanTerm] = useState(6);
-  const [monthlyPayment, setMonthlyPayment] = useState(0);
-  const [totalPayback, setTotalPayback] = useState(0);
+interface LoanSummaryData {
+  loanAmount: string[];
+  interestRate: string[];
+  loanTerm: string[];
+  fee: string[];
+  monthlyPayment: string[];
+  apr: string[];
+  totalPayments: string[];
+  totalCost: string[];
+}
+
+interface LoanSummaryTableProps {
+  title?: string;
+  subtitle?: string;
+  description?: string;
+  data?: LoanSummaryData;
+  className?: string;
+}
+
+export default function LoanSummaryTable({
+  title = "Detailed APR Cost Examples",
+  subtitle = "Loan Summary",
+  description = "Compare loan options with transparent pricing and see exactly what you'll pay over time. All examples include fees and interest for full cost disclosure.",
+  data = {
+    loanAmount: ["$1,000", "$2,000", "$2,500", "$5,000"],
+    interestRate: ["24.00%", "19.00%", "16.00%", "13.00%"],
+    loanTerm: ["12 months", "24 months", "36 months", "48 months"],
+    fee: ["3.00%", "5.00%", "10.00%", "12.00%"],
+    monthlyPayment: ["$94.56", "$100.82", "$87.89", "$131.67"],
+    apr: ["29.82%", "24.12%", "22.93%", "18.23%"],
+    totalPayments: ["$1,134.72", "$2,419.68", "$3,164.13", "$6,320.12"],
+    totalCost: ["$164.72", "$519.68", "$914.13", "$1,920.12"]
+  },
+  className = ""
+}: LoanSummaryTableProps) {
   
-  const interestRate = 15; // 15% annual interest rate
-  const minAmount = 1000;
-  const maxAmount = 50000;
-  const minTerm = 1;
-  const maxTerm = 12;
-
-  const amountSliderRef = useRef<HTMLDivElement>(null);
-  const termSliderRef = useRef<HTMLDivElement>(null);
-
-  // Calculate loan payments
-  useEffect(() => {
-    const monthlyRate = interestRate / 100 / 12;
-    const numberOfPayments = loanTerm;
-    
-    if (monthlyRate === 0) {
-      setMonthlyPayment(loanAmount / numberOfPayments);
-    } else {
-      const payment = (loanAmount * monthlyRate * Math.pow(1 + monthlyRate, numberOfPayments)) / 
-                      (Math.pow(1 + monthlyRate, numberOfPayments) - 1);
-      setMonthlyPayment(Number(payment.toFixed(2)));
-    }
-    
-    setTotalPayback(Number((monthlyPayment * numberOfPayments).toFixed(2)));
-  }, [loanAmount, loanTerm, monthlyPayment]);
-
-  // Initialize noUiSlider after component mounts
-  useEffect(() => {
-    // Check if noUiSlider is available
-    if (typeof window !== 'undefined' && (window as any).noUiSlider) {
-      const noUiSlider = (window as any).noUiSlider;
-      
-      // Initialize amount slider
-      if (amountSliderRef.current) {
-        const amountSlider = noUiSlider.create(amountSliderRef.current, {
-          start: [loanAmount],
-          connect: [true, false],
-          range: {
-            'min': minAmount,
-            'max': maxAmount
-          },
-          step: 1000
-        });
-
-        amountSlider.on('update', function(values: any) {
-          const value = parseInt(values[0]);
-          setLoanAmount(value);
-          document.getElementById('loan-calculator-01-min-count')?.setAttribute('value', value.toString());
-        });
-
-        // Cleanup on unmount
-        return () => {
-          amountSlider.destroy();
-        };
-      }
-    } else {
-      console.warn('noUiSlider not found. Make sure to include the noUiSlider library in your project.');
-    }
-  }, []);
-
-  // Initialize term slider
-  useEffect(() => {
-    if (typeof window !== 'undefined' && (window as any).noUiSlider && termSliderRef.current) {
-      const noUiSlider = (window as any).noUiSlider;
-      
-      const termSlider = noUiSlider.create(termSliderRef.current, {
-        start: [loanTerm],
-        connect: [true, false],
-        range: {
-          'min': minTerm,
-          'max': maxTerm
-        },
-        step: 1
-      });
-
-      termSlider.on('update', function(values: any) {
-        const value = parseInt(values[0]);
-        setLoanTerm(value);
-        document.getElementById('loan-calculator-01-min-month')?.setAttribute('value', value.toString());
-      });
-
-      // Cleanup on unmount
-      return () => {
-        termSlider.destroy();
-      };
-    }
-  }, []);
-
-  const formatCurrency = (amount: number) => {
-    return amount.toLocaleString('en-US', {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2,
-    });
-  };
+  const tableRows = [
+    { label: "Loan Amount", values: data.loanAmount, highlight: false },
+    { label: "Interest Rate", values: data.interestRate, highlight: false },
+    { label: "Loan Term", values: data.loanTerm, highlight: false },
+    { label: "Fee", values: data.fee, highlight: false },
+    { label: "Monthly Payment", values: data.monthlyPayment, highlight: true },
+    { label: "APR", values: data.apr, highlight: true },
+    { label: "Total Payments", values: data.totalPayments, highlight: true },
+    { label: "Total Cost", values: data.totalCost, highlight: true },
+  ];
 
   return (
-   
-    <section className="loan-two loan-two--home" style={{ paddingTop: '80px', paddingBottom: '120px' }}>
+    <section className={`loan-summary section-space ${className}`}>
       <div className="container">
-        {/* Title Section - Added like other sections */}
-        <div className="sec-title sec-title--center wow fadeInUp" data-wow-duration="1500ms">
-          <div className="sec-title__top">
-            <div className="sec-title__shape">
-              <div className="sec-title__shape__one"></div>
-              <div className="sec-title__shape__two"></div>
-            </div>
-            <h6 className="sec-title__tagline">loan calculator</h6>
-            <div className="sec-title__shape">
-              <div className="sec-title__shape__one"></div>
-              <div className="sec-title__shape__two"></div>
+        <div className="row">
+          <div className="col-lg-12 text-center">
+            <div className="section-header">
+              <div className="hadding">
+                <span className="span-two">{subtitle}</span>
+                <h2 className="position-relative fw-700">{title}</h2>
+                <p>{description}</p>
+              </div>
             </div>
           </div>
-          <h3 className="sec-title__title">
-            calculate your loan <br /> payments easily
-          </h3>
         </div>
         
-        <div 
-          className="loan-two__inner wow fadeInUp" 
-          data-wow-duration="1500ms"
-          style={{ backgroundImage: "url(/assets/images/resources/why-choose-2-1.png)" }}
-        >
-          <div className="loan-two__form">
-            <div 
-              className="loan-two__form__bg" 
-              style={{ backgroundImage: "url(/assets/images/shapes/loan-calculator-form-bg-1-1.png)" }}
-            ></div>
+        <div className="row">
+          <div className="table-data">
+            <div className="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <td>Loan Details</td>
+                    {data.loanAmount.map((amount, index) => (
+                      <td key={index}>{amount}</td>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {tableRows.map((row, rowIndex) => (
+                    <tr 
+                      key={rowIndex} 
+                      className={row.highlight ? 'highlight-row' : ''}
+                    >
+                      <td>{row.label}</td>
+                      {row.values.map((value, colIndex) => (
+                        <td key={colIndex}>{value}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
             
-            <form 
-              action="#" 
-              id="loan-calculator-01" 
-              data-form-direction="ltr" 
-              data-interest-rate={interestRate} 
-              className="loan-calculator-form" 
-            >
-              <h3 className="loan-calculator-form__title">How Much Do You Need?</h3>
-              
-              <div className="loan-calculator-form__content">
-                {/* Loan Amount Slider */}
-                <div className="input-box__top">
-                  <span>${minAmount.toLocaleString()}</span>
-                  <span>${maxAmount.toLocaleString()}</span>
-                </div>
-                
-                <div className="input-box">
-                  {/* noUiSlider will be initialized here */}
-                  <div 
-                    ref={amountSliderRef} 
-                    className="range-slider-count" 
-                    id="loan-calculator-01-count"
-                  ></div>
-                  <input 
-                    type="hidden" 
-                    value={loanAmount} 
-                    className="min-count" 
-                    id="loan-calculator-01-min-count" 
-                  />
-                  <input 
-                    type="hidden" 
-                    value={maxAmount} 
-                    className="max-count" 
-                    id="loan-calculator-01-max-count" 
-                  />
-                </div>
-
-                {/* Loan Term Slider */}
-                <div className="input-box__top input-box__top-border">
-                  <span>{minTerm} Month</span>
-                  <span>{maxTerm} Months</span>
-                </div>
-                
-                <div className="input-box">
-                  {/* noUiSlider will be initialized here */}
-                  <div 
-                    ref={termSliderRef} 
-                    className="range-slider-month" 
-                    id="loan-calculator-01-month"
-                  ></div>
-                  <input 
-                    type="hidden" 
-                    value={loanTerm} 
-                    className="min-month" 
-                    id="loan-calculator-01-min-month" 
-                  />
-                  <input 
-                    type="hidden" 
-                    value={maxTerm} 
-                    className="max-month" 
-                    id="loan-calculator-01-max-month" 
-                  />
-                </div>
-
-                {/* Calculation Results */}
-                <p>
-                  <span>Pay Monthly</span>
-                  <b>$<i className="loan-monthly-pay">{formatCurrency(monthlyPayment)}</i></b>
-                </p>
-                <p>
-                  <span>Term of Use</span>
-                  <b><i className="loan-month">{loanTerm}</i> Month{loanTerm > 1 ? 's' : ''}</b>
-                </p>
-                <p>
-                  <span>Total Pay Back amount</span>
-                  <b>$<i className="loan-total">{formatCurrency(totalPayback)}</i></b>
-                </p>
-
-                {/* Apply Button */}
-                <Link href="/apply-loan" className="easilon-btn loan-calculator-form__btn">
-                  <span>Apply for loan</span>
-                  <span className="easilon-btn__icon">
-                    <i className="icon-right-arrow"></i>
-                  </span>
-                </Link>
+            <div className="info-box">
+              <div className="info-icon">
+                ℹ️
               </div>
-            </form>
+              <div className="info-content">
+                <h4>Understanding Your Loan Costs</h4>
+                <p>APR (Annual Percentage Rate) includes both interest and fees to give you a complete picture of loan costs. Lower APR generally means lower total cost over the life of the loan. These examples are for illustrative purposes only. Actual rates and terms may vary based on creditworthiness.</p>
+              </div>
+            </div>
           </div>
-          
-          {/* Money Image */}
-          <Image
-            src="/assets/images/shapes/loan-money-2-1.png"
-            alt="money"
-            className="loan-two__money"
-            width={300}
-            height={300}
-          />
         </div>
       </div>
+
+      <style>{`
+        .loan-summary {
+          background: #f8fafc;
+        }
+
+        .hadding {
+          text-align: center;
+          margin-bottom: 60px;
+        }
+
+        .span-two {
+          display: inline-block;
+          color: #E45551;
+          font-size: 16px;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-bottom: 15px;
+          padding: 5px 15px;
+          background: rgba(228, 85, 81, 0.1);
+          border-radius: 20px;
+        }
+
+        .hadding h2 {
+          font-size: 42px;
+          font-weight: 700;
+          color: #1e293b;
+          margin-bottom: 20px;
+          line-height: 1.2;
+        }
+
+        .hadding p {
+          font-size: 18px;
+          color: #64748b;
+          line-height: 1.6;
+          max-width: 700px;
+          margin: 0 auto;
+        }
+
+        .table-data {
+          width: 100%;
+        }
+
+        .table-wrapper {
+          overflow-x: auto;
+          background: white;
+          border-radius: 15px;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+          margin-bottom: 40px;
+        }
+
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          min-width: 800px;
+        }
+
+        table thead {
+          background: linear-gradient(135deg, #E45551 0%, #ff7a75 100%);
+        }
+
+        table thead tr td {
+          color: white;
+          font-weight: 600;
+          padding: 25px 20px;
+          font-size: 18px;
+          text-align: center;
+          border: none;
+        }
+
+        table thead tr td:first-child {
+          border-radius: 15px 0 0 0;
+        }
+
+        table thead tr td:last-child {
+          border-radius: 0 15px 0 0;
+        }
+
+        table tbody tr {
+          transition: all 0.3s ease;
+        }
+
+        table tbody tr:hover {
+          background: #f8fafc;
+          transform: translateY(-2px);
+        }
+
+        table tbody tr:nth-child(even) {
+          background: #f8fafc;
+        }
+
+        table tbody tr td {
+          padding: 20px;
+          text-align: center;
+          border-bottom: 1px solid #e2e8f0;
+          font-size: 16px;
+          color: #475569;
+        }
+
+        table tbody tr:last-child td {
+          border-bottom: none;
+        }
+
+        table tbody tr td:first-child {
+          font-weight: 600;
+          color: #1e293b;
+          text-align: left;
+          background: #f1f5f9;
+          width: 250px;
+        }
+
+        table tbody tr.highlight-row td {
+          font-weight: 700;
+          color: #E45551;
+          font-size: 18px;
+        }
+
+        /* Info Box */
+        .info-box {
+          background: #f0f9ff;
+          border: 2px solid #bae6fd;
+          border-radius: 15px;
+          padding: 30px;
+          display: flex;
+          gap: 20px;
+          align-items: flex-start;
+        }
+
+        .info-icon {
+          font-size: 32px;
+          color: #0ea5e9;
+          flex-shrink: 0;
+        }
+
+        .info-content h4 {
+          margin: 0 0 15px 0;
+          color: #0369a1;
+          font-size: 20px;
+          font-weight: 600;
+        }
+
+        .info-content p {
+          margin: 0;
+          color: #0c4a6e;
+          line-height: 1.6;
+          font-size: 16px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+          .hadding h2 {
+            font-size: 32px;
+          }
+          
+          .hadding p {
+            font-size: 16px;
+          }
+          
+          table thead tr td {
+            padding: 15px 10px;
+            font-size: 16px;
+          }
+          
+          table tbody tr td {
+            padding: 15px 10px;
+            font-size: 14px;
+          }
+          
+          .info-box {
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+          }
+          
+          .info-icon {
+            margin: 0 auto;
+          }
+        }
+
+      
+
+        /* Section Spacing */
+        .section-space {
+          padding: 100px 0;
+          position: relative;
+        }
+
+        @media (max-width: 768px) {
+          .section-space {
+            padding: 60px 0;
+          }
+        }
+
+        /* Row & Columns */
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0 -15px;
+        }
+
+        .col-lg-12 {
+          flex: 0 0 100%;
+          max-width: 100%;
+          padding: 0 15px;
+        }
+      `}</style>
     </section>
   );
 }

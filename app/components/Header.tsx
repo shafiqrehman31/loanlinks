@@ -74,7 +74,7 @@ export default function Header() {
               <Link href="/" className="logo-link">
                 {/* Single logo that changes color with CSS filter */}
                 <Image
-                  src="/logo-dark.png" // Put your logo in public/logo.png
+                  src="/logo-light.png" // Put your logo in public/logo.png
                   alt="speedy Loan Center"
                   width={150}
                   height={50}
@@ -139,7 +139,7 @@ export default function Header() {
               <div className="mobile-menu-logo">
                 <Link href="/" onClick={handleLinkClick} className="mobile-logo-link">
                   <Image
-                    src="/logo-dark.png"
+                    src="/logo-light.png"
                     alt="speedy Loan Center"
                     width={150}
                     height={50}
@@ -233,8 +233,8 @@ export default function Header() {
         
         .logo-link {
           display: block !important;
-          width: 150px;
-          height: 50px;
+          width: 190px;
+          height: 70px;
           position: relative;
           text-decoration: none;
         }
