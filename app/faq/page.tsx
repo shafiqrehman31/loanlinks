@@ -12,51 +12,74 @@ type FAQItem = {
 const faqCategories = {
   general: [
     {
-      question: "What is speedyy Loan Center?",
-      answer:
-        "speedyy Loan Center is a leading online lending platform that provides fast, transparent, and accessible loan solutions."
+      question: "What is Speedy Loan Center?",
+      answer: "Speedy Loan Center provides fast and reliable personal loans with a simple online process. We focus on clear terms, no hidden fees, and quick access to funds.",
     },
     {
-      question: "How is speedyy Loan Center different from banks?",
-      answer:
-        "We provide approvals within 24 hours with minimal documentation and flexible repayment options."
-    }
-  ],
-  eligibility: [
+      question: "What is a personal loan?",
+      answer: "A personal loan is an unsecured loan for personal expenses or emergencies. Speedy Loan Center offers loans from $100 up to $5,000, repaid in convenient monthly installments.",
+    },
     {
-      question: "What are the eligibility criteria?",
-      answer:
-        "You must be at least 21 years old with a stable income and valid government ID."
-    }
-  ],
-  application: [
+      question: "How much can I borrow?",
+      answer: "You can borrow anywhere from $100 up to $5,000, depending on your income, credit profile, and eligibility.",
+    },
     {
-      question: "How do I apply?",
-      answer:
-        "Fill out our online application, upload documents, and get approval within 24 hours."
-    }
-  ],
-  loanDetails: [
+      question: "Are personal loans available in my state?",
+      answer: "Personal loan availability depends on state regulations. Once you apply, we will provide options that are available in your state.",
+    },
     {
-      question: "What loan amounts are available?",
-      answer:
-        "Loan amounts range from ₹50,000 to ₹50,00,000 depending on eligibility."
-    }
+      question: "Can I qualify for a personal loan?",
+      answer: "To be eligible, you must be at least 18 years old, have a valid checking account, a permanent U.S. address, and a steady source of income.",
+    },
   ],
-  disbursement: [
+
+  credit: [
     {
-      question: "When will I receive the funds?",
-      answer:
-        "Funds are disbursed within 1–2 business days after approval."
-    }
+      question: "Will you check my credit score?",
+      answer: "We may perform a soft credit check to show your personal loan options — this does not impact your credit score. Before final approval, a lender may perform a hard inquiry to verify your information, which will appear on your credit report.",
+    },
+    {
+      question: "Can I apply with bad credit?",
+      answer: "Yes! We consider applicants from all credit backgrounds. While credit history may affect terms, income, employment stability, and debt-to-income ratio are also considered.",
+    },
   ],
-  repayment: [
+
+  process: [
     {
-      question: "What repayment options are available?",
-      answer:
-        "EMI auto-debit, UPI, net banking, and cheque payments are supported."
-    }
-  ]
+      question: "How do I get the money?",
+      answer: "Complete our online loan request form. Once approved, funds are transferred directly to your bank account, usually within one business day.",
+    },
+    {
+      question: "How long does the loan process take?",
+      answer: "Most applicants see loan options within minutes. Once approved, funds are typically available the same day or the next business day.",
+    },
+    {
+      question: "When do I repay the loan?",
+      answer: "Repayments are automatically deducted from your checking account on the agreed monthly date.",
+    },
+    {
+      question: "What if I miss a payment?",
+      answer: "Contact us immediately. We can help arrange a new payment plan or provide guidance to avoid unnecessary fees.",
+    },
+  ],
+
+  fees: [
+    {
+      question: "Are there any fees or interest?",
+      answer: "Fees and interest depend on your loan amount and lender terms. All costs are clearly disclosed before you accept the loan — no hidden charges.",
+    },
+    {
+      question: "Can I pay off my loan early?",
+      answer: "Yes, you can repay your personal loan early without prepayment penalties. Early repayment can save you money on interest.",
+    },
+  ],
+
+  security: [
+    {
+      question: "How do you protect my information?",
+      answer: "Your privacy and security are our top priority. Speedy Loan Center uses encryption technology to keep your information safe. See our Privacy Policy for details.",
+    },
+  ],
 };
 
 type FaqCategoryKey = keyof typeof faqCategories;
