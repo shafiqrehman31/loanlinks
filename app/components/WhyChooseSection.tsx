@@ -5,29 +5,29 @@ const features = [
   {
     id: 1,
     icon: "icon-credit", // placeholder for credit-related icon
-    title: "Bad credit OK",
-    description: "Low Credit? We’ve Got You Covered. Fast loans for everyone, hassle-free.",
+    title: "Bad Credit? No Problem",
+    description: "Fast personal loans for everyone hassle-free and reliable.",
     delay: 0,
   },
   {
     id: 2,
     icon: "icon-online", // placeholder for online/start icon
-    title: "Start online",
-    description: "Start Your Loan Online. Quick approval, no paperwork delays.",
+    title: "Apply Online",
+    description: "Start your personal loan application quickly, with no paperwork delays.",
     delay: 100,
   },
   {
     id: 3,
     icon: "icon-bank", // placeholder for bank / cash transfer icon
-    title: "Withdraw cash in Your A/c",
-    description: "Receive Cash Instantly in Your Bank. Fast, reliable, and simple.",
+    title: "Funds in Your Account",
+    description: "Get approved personal loan funds instantly simple and secure.",
     delay: 200,
   },
   {
     id: 4,
     icon: "icon-world", // placeholder for global presence icon
-    title: "Global Presence",
-    description: "A Worldwide Network of Partners. Reliable financial solutions across borders.",
+    title: "Trusted Nationwide",
+    description: "We serve customers across the USA with fast, dependable personal loan solutions.",
     delay: 300,
   },
 ];
@@ -87,7 +87,7 @@ export default function WhyChooseSection() {
               
               <div className="why-choose-two__text-box wow fadeInUp" data-wow-duration="1500ms">
                 <p className="why-choose-two__text">
-                 speedy Loan Center offers fast approvals with a simple and transparent process. We focus on fair terms, security, and customer satisfaction.
+                 At <b>Speedy Loan Center,</b> we provide fast personal loan approvals with a simple, transparent process. We focus on fair terms, security, and customer satisfaction, helping you access funds quickly and with confidence.
                 </p>
               </div>
               

@@ -15,7 +15,7 @@ export default function HeroSection() {
     fade: true,
     autoplay: true,
     autoplaySpeed: 4000,
-    speed: 2000,
+    speed: 4000,
     infinite: true,
     arrows: false,
     dots: false,
@@ -46,6 +46,7 @@ export default function HeroSection() {
       mainSlider.current?.slickGoTo(next, true);
     },
   };
+  
 
   return (
     <section className="main-slider-three" id="home">
@@ -90,14 +91,14 @@ const slides = [
   {
     bg: '/assets/images/backgrounds/main-slider-bg-3-2.png',
     subtitle: 'speedy Loans Center for Bright Futures',
-    title1: 'Smart Loan Solutions',
-    title2: 'Built for Your Future',
+    title1: 'We provide the best',
+    title2: 'personal loan service.',
   },
   {
     bg: '/assets/images/backgrounds/main-slider-bg-3-3.png',
     subtitle: 'speedy Loans Center for Bright Futures',
-    title1: 'We provide best',
-    title2: 'services for your loan',
+    title1: 'Get your personal loan',
+    title2: ' up to $5,000 with ease',
   },
   {
     bg: '/assets/images/backgrounds/main-slider-bg-3-4.png',

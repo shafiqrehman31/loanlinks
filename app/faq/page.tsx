@@ -216,7 +216,7 @@ export default function FAQPage() {
               </div>
               
               <div className="faq-footer">
-                <p>Still have questions? Check our <Link href="/knowledge-base">Knowledge Base</Link> or <Link href="/contact">Contact Us</Link></p>
+                <p>Still have questions? Check our <Link href="/contact">Contact Us</Link></p>
               </div>
             </div>
           </div>

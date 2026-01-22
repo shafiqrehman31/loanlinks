@@ -53,7 +53,6 @@ export default function Header() {
   const menuItems = [
     { name: 'Home', href: '/' },
     { name: 'About Us', href: '/about' },
-    { name: 'How it Works', href: '/how-it-works' },
     { name: 'FAQ', href: '/faq' },
     { name: 'Contact Us', href: '/contact' },
   ];
@@ -123,7 +122,7 @@ export default function Header() {
               <Link href="/apply-loan" className="easilon-btn main-header__btn">
                 <span>Loan Quote</span>
                 <span className="easilon-btn__icon">
-                  <i className="icon-right-arrow">→</i>
+                  <i className="icon-right-arrow"></i>
                 </span>
               </Link>
 

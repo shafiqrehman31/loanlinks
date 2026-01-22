@@ -59,7 +59,7 @@ export default function TestimonialsSection() {
                     </div>
                     
                     <div className="testimonial-card-three__content">
-                      <img src={item.image} alt={item.name} className="testimonial-card-three__image" />
+                      
                       
                       <div className="easilon-ratings">
                         {[...Array(5)].map((_, i) => (
@@ -74,7 +74,6 @@ export default function TestimonialsSection() {
                       <div className="testimonial-card-three__bottom">
                         <div className="testimonial-card-three__identity">
                           <h4 className="testimonial-card-three__name">{item.name}</h4>
-                          <p className="testimonial-card-three__designation">{item.designation}</p>
                         </div>
                         
                         <svg className="testimonial-card-three__icon" viewBox="0 0 65 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -98,27 +97,23 @@ export default function TestimonialsSection() {
 
 const testimonials = [
   {
-    name: 'Kenneth S. Fisher',
-    designation: 'Marketing Manager',
-    message: 'posuere luctus orci. Donec vitae mattis quam, vitae tempor arcu. Aenean non odio porttitor, convallis erat sit amet. Being a survivor now, I realized I was not educated',
-    image: '/assets/images/testimonials/testimonial-3-1.jpg',
+    name: 'John M., California',
+    message: 'Speedy Loan Center made it so easy to get a personal loan. Funds were in my account the same day — highly recommend!',
   },
   {
-    name: 'Mike Hardson',
-    designation: 'Managing Director',
-    message: 'Quick win code circle back around, so big picture, yet knowledge is power what about scaling components to a global audience?. Design thinking gain traction The horse is',
-    image: '/assets/images/testimonials/testimonial-3-2.jpg',
+    name: 'Samantha R., Texas',
+    message: 'I was worried about my credit score, but they approved my loan quickly and hassle-free. Great service!',
   },
   {
-    name: 'Judith White',
-    designation: 'Managing Director',
-    message: 'Get six alpha pups in here for a focus group single wringable neck, so cloud strategy. Let\'s take this conversation offline ramp up, so i called the it department',
-    image: '/assets/images/testimonials/testimonial-3-3.jpg',
+    name: 'David L., Florida',
+    message: 'The process was simple and transparent. I got exactly the amount I needed for unexpected expenses.',
   },
   {
-    name: 'Sarah Albert',
-    designation: 'CEO',
-    message: 'Amazing service and professional team. They helped us get the loan we needed quickly and efficiently.',
-    image: '/assets/images/team/team-2-1.jpg',
+    name: 'Emily K., New York',
+    message: 'Fast, reliable, and friendly. I appreciated how quick the approval was and how easy everything felt.',
+  },
+  {
+    name: 'Michael T., Illinois',
+    message: 'Excellent experience. Applying online was quick, and the funds were transferred directly to my account.',
   },
 ];

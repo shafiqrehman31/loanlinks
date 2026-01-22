@@ -23,7 +23,8 @@ const funfactItems = [
     delay: 200,
   },
   {
-    value: 550,
+    value: 25,
+    suffix: '+',
     title: 'staff members',
     delay: 300,
   },

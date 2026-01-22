@@ -4,32 +4,32 @@ const processSteps = [
   {
     id: 1,
     image: "/assets/images/working-process/1.png",
-    title: "Discover Your Loan Options Instantly",
-    description: "Complete our fast and secure loan request form—just a few minutes, no impact on your credit score, and get personalized offers tailored for you.",
+    title: "Minute Quick Form",
+    description: "Apply in just 60 seconds for your personal loan fast, simple, no credit worries.",
     delay: 0,
     isDown: false,
   },
   {
     id: 2,
     image: "/assets/images/working-process/2.png",
-    title: "Fast & Secure Review",
-    description: "Our team carefully reviews your application and verifies the details to ensure a smooth and secure approval process hassle-free and transparent.",
+    title: "Your Loan, Your Choice",
+    description: "Select the personal loan option that fits your needs with full control.",
     delay: 100,
     isDown: true,
   },
   {
     id: 3,
     image: "/assets/images/working-process/3.png",
-    title: "Quick Loan Approval",
-    description: "Once your application is verified, receive fast loan approval and get your funds directly simple, reliable, and stress-free.",
+    title: "Instant Updates",
+    description: "Stay informed at every step with real-time email or SMS notifications.",
     delay: 200,
     isDown: false,
   },
   {
     id: 4,
     image: "/assets/images/working-process/4.png",
-    title: "Fast & Secure Fund Disbursement",
-    description: "Once approved, your loan amount is transferred directly to your account quickly and securely, so you can access the funds exactly when you need them.",
+    title: "Funds When You Need Them",
+    description: "Get your approved personal loan in your account quickly flexible and hassle-free.",
     delay: 300,
     isDown: true,
   },
@@ -61,7 +61,7 @@ interface ProcessStepProps {
 
 function ProcessStep({ step }: ProcessStepProps) {
   return (
-    <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay={`${step.delay}ms`}>
+    <div  className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay={`${step.delay}ms`}>
       <div className={`work-process-one__item ${step.isDown ? 'work-process-one__item--down' : ''}`}>
         <div className="work-process-one__item__image">
           <Image
@@ -86,7 +86,7 @@ function ProcessStep({ step }: ProcessStepProps) {
 
 export default function WorkProcessSection() {
   return (
-    <section className="work-process-one section-space">
+    <section id="how-it-work" className="work-process-one section-space">
       <div className="container">
         <div className="sec-title sec-title--center">
           <div className="sec-title__top">
