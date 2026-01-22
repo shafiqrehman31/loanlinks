@@ -78,7 +78,7 @@ export default function WhyChooseSection() {
                     <div className="sec-title__shape__one"></div>
                     <div className="sec-title__shape__two"></div>
                   </div>
-                  <h6 className="sec-title__tagline">WHAT WE RE DOING</h6>
+                  <h6 className="sec-title__tagline">WHAT WE ARE DOING</h6>
                 </div>
                 <h3 className="sec-title__title">
                   Why You Should Choose <br /> speedy Loan Center?

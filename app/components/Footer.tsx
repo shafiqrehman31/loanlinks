@@ -42,11 +42,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="mb-2">
-                <Link href="/how-it-works" className="text-white text-decoration-none">
-                  How it Works
-                </Link>
-              </li>
-              <li className="mb-2">
                 <Link href="/apply-loan" className="text-white text-decoration-none">
                   Loan Quote
                 </Link>
@@ -85,7 +80,7 @@ export default function Footer() {
           <div className="col-md-3 mb-4">
             <h6 className="mb-3">Contact</h6>
             <p className="mb-2">Email: info@speedyloancenter.com</p>
-            <p className="mb-2">Phone: +91 5698 0036 420</p>
+            <p className="mb-2">Phone: +1 5698 0036 420</p>
             
             <h6 className="mb-3 mt-4">Follow Us</h6>
             <div className="d-flex gap-3">
@@ -106,7 +101,7 @@ export default function Footer() {
         </div>
         
         <div className="text-center pt-4 border-top border-secondary">
-          <p className="mb-0">© {currentYear} <strong>speedy Loan Center</strong>. All rights reserved.</p>
+          <p className="mb-0">© {currentYear} <strong>Speedy Loan Center</strong>. All rights reserved.</p>
         </div>
       </div>
     </footer>

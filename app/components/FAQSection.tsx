@@ -142,8 +142,7 @@ export default function FAQSection() {
             Answers to Your <br /> Common Questions
           </h2>
           <p className="section-description">
-            Everything you need to know about our loan services. Can't find the answer you're looking for? 
-            Contact our friendly team.
+            Everything you need to know about our loan services.
           </p>
         </div>
         

@@ -26,7 +26,7 @@ export default function TestimonialsSection() {
                   </div>
                 </div>
                 <h3 className="sec-title__title">
-                  peoples talk about <br /> easilon service
+                  What People Talk About Us <br /> 
                 </h3>
               </div>
             </div>

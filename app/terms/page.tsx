@@ -108,7 +108,7 @@ export default function TermsConditionsPage() {
               </div>
               
               <div className="company-info">
-                <h2>speedy Loan Center</h2>
+                <h2>Speedy Loan Center</h2>
                 <p className="website">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                     <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" stroke="currentColor" strokeWidth="2"/>
@@ -118,7 +118,7 @@ export default function TermsConditionsPage() {
                   www.speedyloancenter.com
                 </p>
                 <p className="description">
-                  speedy Loan Center provides loan referral and lead-generation services through our website and related applications.
+                  Speedy Loan Center provides loan referral and lead-generation services through our website and related applications.
                 </p>
               </div>
             </div>
@@ -153,7 +153,7 @@ export default function TermsConditionsPage() {
                 <div className="term-content">
                   <h3>Loan Referral & Lead Generation Service</h3>
                   <p>
-                    speedy Loan Center operates an online loan referral and lead-distribution platform that connects 
+                    Speedy Loan Center operates an online loan referral and lead-distribution platform that connects 
                     consumers with third-party lenders, lender networks, and financial service providers ("Lender Partners").
                   </p>
                   
@@ -196,7 +196,7 @@ export default function TermsConditionsPage() {
                 <div className="term-content">
                   <h3>No Lending or Credit Decisions</h3>
                   <p>
-                    speedy Loan Center is not a lender, does not issue loans, and does not make credit decisions.
+                    Speedy Loan Center is not a lender, does not issue loans, and does not make credit decisions.
                   </p>
                   
                   <div className="disclaimer-box">
@@ -226,7 +226,7 @@ export default function TermsConditionsPage() {
                 <div className="term-content">
                   <h3>Information Sharing & Contact Consent</h3>
                   <p>
-                    By submitting a Request Form, you authorize speedy Loan Center to share your information 
+                    By submitting a Request Form, you authorize Speedy Loan Center to share your information 
                     with multiple Lender Partners.
                   </p>
                   
@@ -234,7 +234,7 @@ export default function TermsConditionsPage() {
                     <h4>You acknowledge that:</h4>
                     <ul>
                       <li>You are requesting loan offers from third parties</li>
-                      <li>speedy Loan Center and Lender Partners may contact you via:</li>
+                      <li>Speedy Loan Center and Lender Partners may contact you via:</li>
                     </ul>
                     
                     <div className="contact-methods">
@@ -335,7 +335,7 @@ export default function TermsConditionsPage() {
                     <div className="flow-step">
                       <div className="step-number">2</div>
                       <div className="step-content">
-                        <h4>speedy Loan Center Steps Back</h4>
+                        <h4>Speedy Loan Center Steps Back</h4>
                         <p>We are no longer involved in the process</p>
                       </div>
                     </div>
@@ -437,7 +437,7 @@ export default function TermsConditionsPage() {
                   <div className="compact-content">
                     <h4>Changes to the Service</h4>
                     <p>
-                      speedy Loan Center may modify, suspend, or discontinue any part of the Service at any time 
+                      Speedy Loan Center may modify, suspend, or discontinue any part of the Service at any time 
                       without notice. We are not responsible for delays or failures caused by incorrect user 
                       information or system issues beyond our control.
                     </p>
@@ -450,7 +450,7 @@ export default function TermsConditionsPage() {
                   <div className="compact-content">
                     <h4>Disclaimers</h4>
                     <p>
-                      THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE." speedy Loan Center DISCLAIMS ALL 
+                      THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE." Speedy Loan Center DISCLAIMS ALL 
                       WARRANTIES, EXPRESS OR IMPLIED. USE OF THE SERVICE IS AT YOUR OWN RISK.
                     </p>
                   </div>
@@ -462,7 +462,7 @@ export default function TermsConditionsPage() {
                   <div className="compact-content">
                     <h4>Limitation of Liability</h4>
                     <p>
-                      To the maximum extent permitted by law, speedy Loan Center is not liable for indirect or 
+                      To the maximum extent permitted by law, Speedy Loan Center is not liable for indirect or 
                       consequential damages, credit decisions, loss of data, or unauthorized access beyond 
                       reasonable security measures.
                     </p>
@@ -475,7 +475,7 @@ export default function TermsConditionsPage() {
                   <div className="compact-content">
                     <h4>Indemnification</h4>
                     <p>
-                      You agree to indemnify and hold harmless speedy Loan Center from any claims arising from 
+                      You agree to indemnify and hold harmless Speedy Loan Center from any claims arising from 
                       your use of the Service or violation of these Terms.
                     </p>
                   </div>
@@ -487,7 +487,7 @@ export default function TermsConditionsPage() {
                   <div className="compact-content">
                     <h4>Third-Party Links</h4>
                     <p>
-                      The Service may include links to third-party websites. speedy Loan Center does not control 
+                      The Service may include links to third-party websites. Speedy Loan Center does not control 
                       or endorse third-party content or services.
                     </p>
                   </div>

@@ -111,7 +111,7 @@ export default function PrivacyPolicyPage() {
               </div>
               
               <div className="company-info">
-                <h2>speedy Loan Center</h2>
+                <h2>Speedy Loan Center</h2>
                 <p className="website">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                     <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" stroke="currentColor" strokeWidth="2"/>
@@ -121,7 +121,7 @@ export default function PrivacyPolicyPage() {
                   www.speedyloancenter.com
                 </p>
                 <p className="description">
-                  speedy Loan Center operates a financial lead-generation platform that connects consumers 
+                  Speedy Loan Center operates a financial lead-generation platform that connects consumers 
                   with third-party lenders and financial service providers.
                 </p>
               </div>
@@ -589,7 +589,7 @@ export default function PrivacyPolicyPage() {
                   <div className="compact-content">
                     <h4>Contact Us</h4>
                     <div className="contact-details">
-                      <div className="company-name">speedy Loan Center</div>
+                      <div className="company-name">Speedy Loan Center</div>
                       <div className="contact-item">
                         <span className="contact-label">Email:</span>
                         <span className="contact-value">contact@speedyloancenter.com</span>

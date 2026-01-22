@@ -67,7 +67,7 @@ export default function AboutSection() {
                 </p>
                 
                 <p className="about-three__text">
-                We are trusted by customers nationwide for<b>reliable personal loan solutions </b>because your financial needs matter, and we make borrowing simple.
+                We are trusted by customers nationwide for<b> reliable personal loan solutions </b>because your financial needs matter, and we make borrowing simple.
                 </p>
               </div>
 
