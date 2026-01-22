@@ -16,8 +16,8 @@ const montserrat = Montserrat({
 
 // Metadata for SEO
 export const metadata: Metadata = {
-  title: 'SpeedLoanCenter | Get Fast Loans Online – Hassle-Free & Secure',
-  description: 'SpeedLoanCenter helps you get fast, secure, and hassle-free loans online. Apply in minutes with no rush, no hidden fees, and quick approval from trusted lenders.',
+  title: 'SpeedyLoanCenter | Get Fast Loans Online – Hassle-Free & Secure',
+  description: 'SpeedyLoanCenter helps you get fast, secure, and hassle-free loans online. Apply in minutes with no rush, no hidden fees, and quick approval from trusted lenders.',
 };
 
 // All JS scripts (footer)
