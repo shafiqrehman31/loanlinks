@@ -22,8 +22,7 @@ export default function Footer() {
               </Link>
             </div>
             <p className="mb-0">
-              Your fastest path to financial freedom. Quick approvals, competitive rates, 
-              and personalized loan solutions for all your needs.
+              Speedy Loan Center is a trading style of Instant Marketing UKAU LLC
             </p>
           </div>
           
