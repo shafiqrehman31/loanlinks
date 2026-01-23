@@ -92,14 +92,14 @@ export default function AboutUs() {
                     <h6 className="sec-title__tagline">welcome to speedy loan center</h6>
                   </div>
                   <h3 className="sec-title__title">
-                    Fast Personal Loans to <br /> Meet Your Needs
+                    Fast Loans to <br /> Meet Your Needs
                   </h3>
                 </div>
                 
                 {/* Text Content */}
                 <div className="about-one__text-box wow fadeInUp" data-wow-duration="1500ms">
                   <p className="about-one__text">
-                  At Speedy Loan Center, we believe financial help should be fast, simple, and transparent. Our mission is to provide individuals with quick personal loans from $100 to $5,000 — no unnecessary paperwork, no delays.
+                  At Speedy Loan Center, we believe financial help should be fast, simple, and transparent. Our mission is to provide individuals with quick loans from $100 to $5,000 — no unnecessary paperwork, no delays.
                    
                   </p>
                 </div>

@@ -6,28 +6,28 @@ const features = [
     id: 1,
     icon: "icon-credit", // placeholder for credit-related icon
     title: "Bad Credit? No Problem",
-    description: "Fast personal loans for everyone hassle-free and reliable.",
+    description: "Fast loans for everyone hassle-free and reliable.",
     delay: 0,
   },
   {
     id: 2,
     icon: "icon-online", // placeholder for online/start icon
     title: "Apply Online",
-    description: "Start your personal loan application quickly, with no paperwork delays.",
+    description: "Start your loan application quickly, with no paperwork delays.",
     delay: 100,
   },
   {
     id: 3,
     icon: "icon-bank", // placeholder for bank / cash transfer icon
     title: "Funds in Your Account",
-    description: "Get approved personal loan funds instantly simple and secure.",
+    description: "Get approved loan funds instantly simple and secure.",
     delay: 200,
   },
   {
     id: 4,
     icon: "icon-world", // placeholder for global presence icon
     title: "Trusted Nationwide",
-    description: "We serve customers across the USA with fast, dependable personal loan solutions.",
+    description: "We serve customers across the USA with fast, dependable loan solutions.",
     delay: 300,
   },
 ];
@@ -87,7 +87,7 @@ export default function WhyChooseSection() {
               
               <div className="why-choose-two__text-box wow fadeInUp" data-wow-duration="1500ms">
                 <p className="why-choose-two__text">
-                 At <b>Speedy Loan Center,</b> we provide fast personal loan approvals with a simple, transparent process. We focus on fair terms, security, and customer satisfaction, helping you access funds quickly and with confidence.
+                 At <b>Speedy Loan Center,</b> we provide fast loan approvals with a simple, transparent process. We focus on fair terms, security, and customer satisfaction, helping you access funds quickly and with confidence.
                 </p>
               </div>
               

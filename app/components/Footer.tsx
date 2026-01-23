@@ -80,7 +80,6 @@ export default function Footer() {
           <div className="col-md-3 mb-4">
             <h6 className="mb-3">Contact</h6>
             <p className="mb-2">Email: info@speedyloancenter.com</p>
-            <p className="mb-2">Phone: +1 5698 0036 420</p>
             
             <h6 className="mb-3 mt-4">Follow Us</h6>
             <div className="d-flex gap-3">

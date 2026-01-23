@@ -176,23 +176,12 @@ export default function Header() {
             </nav>
             
             <div className="mobile-menu-contact">
-              <div className="mobile-menu-contact-item">
-                <div className="mobile-menu-contact-icon">
-                  <i className="icon-phone">📞</i>
-                </div>
-                <div className="mobile-menu-contact-text">
-                  <p>Call Anytime</p>
-                  <h4>
-                    <a href="tel:+9156980036420" onClick={handleLinkClick}>+91 5698 0036 420</a>
-                  </h4>
-                </div>
-              </div>
-              <div className="mobile-menu-contact-item">
+                 <div className="mobile-menu-contact-item">
                 <div className="mobile-menu-contact-icon">
                   <i className="icon-email">✉️</i>
                 </div>
                 <div className="mobile-menu-contact-text">
-                  <p>Send Email</p>
+                  
                   <h4>
                     <a href="mailto:info@speedyloancenter.com" onClick={handleLinkClick}>info@speedyloancenter.com</a>
                   </h4>
@@ -656,7 +645,7 @@ export default function Header() {
         
         .mobile-menu-contact-icon {
           width: 40px;
-          height: 40px;
+          height: 30px;
           background: #E45551;
           border-radius: 50%;
           display: flex;

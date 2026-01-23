@@ -13,22 +13,22 @@ const faqCategories = {
   general: [
     {
       question: "What is Speedy Loan Center?",
-      answer: "Speedy Loan Center provides fast and reliable personal loans with a simple online process. We focus on clear terms, no hidden fees, and quick access to funds.",
+      answer: "Speedy Loan Center provides fast and reliable loans with a simple online process. We focus on clear terms, no hidden fees, and quick access to funds.",
     },
     {
-      question: "What is a personal loan?",
-      answer: "A personal loan is an unsecured loan for personal expenses or emergencies. Speedy Loan Center offers loans from $100 up to $5,000, repaid in convenient monthly installments.",
+      question: "What is a loan?",
+      answer: "A loan is an unsecured loan for expenses or emergencies. Speedy Loan Center offers loans from $100 up to $5,000, repaid in convenient monthly installments.",
     },
     {
       question: "How much can I borrow?",
       answer: "You can borrow anywhere from $100 up to $5,000, depending on your income, credit profile, and eligibility.",
     },
     {
-      question: "Are personal loans available in my state?",
-      answer: "Personal loan availability depends on state regulations. Once you apply, we will provide options that are available in your state.",
+      question: "Are loans available in my state?",
+      answer: "Loan availability depends on state regulations. Once you apply, we will provide options that are available in your state.",
     },
     {
-      question: "Can I qualify for a personal loan?",
+      question: "Can I qualify for a loan?",
       answer: "To be eligible, you must be at least 18 years old, have a valid checking account, a permanent U.S. address, and a steady source of income.",
     },
   ],
@@ -36,7 +36,7 @@ const faqCategories = {
   credit: [
     {
       question: "Will you check my credit score?",
-      answer: "We may perform a soft credit check to show your personal loan options — this does not impact your credit score. Before final approval, a lender may perform a hard inquiry to verify your information, which will appear on your credit report.",
+      answer: "We may perform a soft credit check to show your loan options — this does not impact your credit score. Before final approval, a lender may perform a hard inquiry to verify your information, which will appear on your credit report.",
     },
     {
       question: "Can I apply with bad credit?",
@@ -70,7 +70,7 @@ const faqCategories = {
     },
     {
       question: "Can I pay off my loan early?",
-      answer: "Yes, you can repay your personal loan early without prepayment penalties. Early repayment can save you money on interest.",
+      answer: "Yes, you can repay your loan early without prepayment penalties. Early repayment can save you money on interest.",
     },
   ],
 

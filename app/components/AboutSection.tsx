@@ -57,17 +57,17 @@ export default function AboutSection() {
                   <h6 className="sec-title__tagline">welcome to Speedy Loan Center</h6>
                 </div>
                 <h3 className="sec-title__title">
-                 Fast Personal Loan Approvals  No Waiting
+                 Fast Loan Approvals  No Waiting
                 </h3>
               </div>
 
               <div className="about-three__text-box wow fadeInUp" data-wow-duration="1500ms">
                 <p className="about-three__text">
-                 At <b>Speedy Loan Center,</b> we specialize in helping you get a personal loan quickly and easily. Our process is simple, transparent, and designed for your convenience. Whether you need funds for everyday expenses or unexpected costs, we provide flexible personal loan amounts from $100 up to $5,000 with fast approval and complete peace of mind.
+                 At <b>Speedy Loan Center,</b> we specialize in helping you get a loan quickly and easily. Our process is simple, transparent, and designed for your convenience. Whether you need funds for everyday expenses or unexpected costs, we provide flexible loan amounts from $100 up to $5,000 with fast approval and complete peace of mind.
                 </p>
                 
                 <p className="about-three__text">
-                We are trusted by customers nationwide for<b> reliable personal loan solutions </b>because your financial needs matter, and we make borrowing simple.
+                We are trusted by customers nationwide for<b> reliable loan solutions </b>because your financial needs matter, and we make borrowing simple.
                 </p>
               </div>
 

@@ -85,20 +85,20 @@ const slides = [
   {
     bg: '/assets/images/backgrounds/main-slider-bg-3-1.png',
     subtitle: 'speedy Loans Center for Bright Futures',
-    title1: 'Fast, Fair Personal ',
-    title2: 'Loans in Minutes',
+    title1: 'Fast, Fair Loans ',
+    title2: ' in Minutes',
   },
   {
     bg: '/assets/images/backgrounds/main-slider-bg-3-2.png',
     subtitle: 'speedy Loans Center for Bright Futures',
-    title1: 'We provide the best',
-    title2: 'personal loan service.',
+    title1: 'We provide the',
+    title2: 'best loan service.',
   },
   {
     bg: '/assets/images/backgrounds/main-slider-bg-3-3.png',
     subtitle: 'speedy Loans Center for Bright Futures',
-    title1: 'Get your personal loan',
-    title2: ' up to $5,000 with ease',
+    title1: 'Get your loan',
+    title2: 'up to $5,000',
   },
   {
     bg: '/assets/images/backgrounds/main-slider-bg-3-4.png',

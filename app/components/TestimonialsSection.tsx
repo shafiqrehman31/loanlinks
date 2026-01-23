@@ -98,7 +98,7 @@ export default function TestimonialsSection() {
 const testimonials = [
   {
     name: 'John M., California',
-    message: 'Speedy Loan Center made it so easy to get a personal loan. Funds were in my account the same day — highly recommend!',
+    message: 'Speedy Loan Center made it so easy to get a loan. Funds were in my account the same day — highly recommend!',
   },
   {
     name: 'Samantha R., Texas',
